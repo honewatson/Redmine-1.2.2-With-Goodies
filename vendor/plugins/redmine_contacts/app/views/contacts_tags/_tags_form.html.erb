@@ -1,0 +1,7 @@
+<% fields_for :contact, @contact, :builder => TabularFormBuilder do |f| -%>
+<div>
+  <p id="contact_tags"><%= f.text_field :tag_list, :label => :field_contact_tag_names, :size => 10, :class => 'hol' %></p>
+  <div id="contact_tag_candidates" class="autocomplete"></div>
+  <%= javascript_tag "observeContactTagsField('#{url_for(:controller => 'auto_completes', :action => 'contact_tags', :project_id => @project)}')" %>
+</div>
+<% end -%>

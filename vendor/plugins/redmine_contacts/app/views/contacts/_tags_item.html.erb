@@ -1,0 +1,27 @@
+<% multiple = false if multiple.blank?  %>
+<% show_selected = false if show_selected.blank?  %>          
+
+<% current_tags = ActsAsTaggableOn::TagList.from(params[:tag]) %>  
+
+<% tag_url = multiple ? [params[:tag], tags_item.name].join(', ') : tags_item.name %>
+
+<% color = tags_item.color_name %>   
+<% html_options = {} %>
+<% html_options[:id] = "tag_#{tags_item.id}" %>
+<% html_options[:style] = "background-color: #{color}" %>
+
+
+<% if current_tags.include?(tags_item.name) and show_selected %>    
+	<% tag_url = multiple ? current_tags.remove(tags_item.name).to_s : tags_item.name %>  
+	<% html_options.delete(:style) %> 
+	<% html_options[:class] = "selected" %> 
+<% end %>   
+
+<span class="tag" >        
+	<%- if !is_note -%> 
+		<%= link_to tags_item.name + "#{"(" + tags_item.count.to_s + ")" if tags_item.count > 0}", {:controller => "contacts", :action => "index", :project_id => @project, :tag => tag_url}, html_options %>       
+	<%- else -%>    
+		<%= link_to tags_item.name, {:controller => "contacts", :action => "contacts_notes", :project_id => @project, :tag => tags_item.name}, html_options %> 
+	<%- end -%>
+</span>	   
+

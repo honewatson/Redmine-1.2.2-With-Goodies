@@ -1,0 +1,77 @@
+<div class="contextual">
+  <%= link_to_if_authorized l(:label_contact_new), {:controller => 'contacts', :action => 'new', :project_id => @project}, :class => 'icon icon-add' %>
+</div>                  
+
+   <div class="filters">
+		<h2 class="contacts_header">    
+		<span id="select_scope" style="display:none;">
+			 
+			<% form_tag(params, :method => :get) do %>  
+			<%= select_tag :is_company, contacts_filters_for_select(params[:is_company]), :onchange => "if (this.value=='-1') {this.value='#{params[:is_company]}' ;Element.toggle('select_scope'); Element.toggle('scope_header');} else {this.form.submit();}" %>  
+			<% end %>
+		</span> 
+			
+		<span id='scope_header' class="scope_title">     
+		<%= link_to "#{contacts_filter_name(params[:is_company])}(#{@contacts_count})", {}, :onclick => "Element.toggle('select_scope'); Element.toggle('scope_header'); return false;" %> 
+		</span>         
+		
+		<% if !@tag %>
+		<span class="live_search">  
+			<%= label_tag :search, l(:label_search), :id => "search_overlabel" %>
+		 	<%= text_field_tag(:search, params[:search], :autocomplete => "off", :size => "35", :class => "live_search_field", :onfocus => "Element.hide('search_overlabel'); return false;", :onblur => "if (this.value == '') {Element.show('search_overlabel');}" ) %>           
+		<!-- , :onfocus => "if (this.value == 'Поиск') {this.value = '';}", :onblur => "if (this.value == '') {this.value ='Поиск'; this.style.color='#aaa'}" -->
+			<%= observe_field("search",  
+				:frequency => 2, 
+			    :update => 'contact_list', 
+				:url => {:controller => 'contacts',  :action => 'index', :project_id => @project }, 
+			    :with => "search") %>
+		</span>
+		<% end %>
+		
+		<span class="tags"> 
+			<%= render(:partial => "tags_item", :collection => @tag, :locals => {:is_note => true} ) %>
+		</span>	  
+		
+		</h2>           
+		
+		<% unless true %> 		
+
+		<fieldset id="filters" class="collapsible <%= 'collapsed' if params[:deal_status_id].blank? %>">
+			<legend onclick="toggleFieldset(this);"><%= l(:label_filter_plural) %></legend>
+			<div style="<%= 'display: none;' if params[:deal_status_id].blank? %>">
+				<%= select_tag :deal_status_id, options_from_collection_for_select(@project.assignable_users, :id, :name), :onchange => "this.form.submit();" %>
+			</div>
+		</fieldset> 
+		                                                                            
+	    <% end %>
+	
+   </div>  
+<div id="contact_list">  
+	<%= render :partial => 'list' %>   
+</div>     
+
+<% other_formats_links do |f| %>
+	<%= f.link_to 'Atom', :url => params.merge(:key => User.current.rss_key) %>
+<% end %>
+
+
+<% html_title l(:label_contact_plural) %>  
+
+<% content_for :sidebar do %>  
+        
+	<%= render :partial => 'common/sidebar' %>
+	<%= render :partial => 'tags_cloud' %>
+	<%= render :partial => 'notes/last_notes', :object => @last_notes %>        
+	<%= render :partial => 'common/recently_viewed' %>    
+
+	<%= call_hook(:view_contacts_sidebar_contacts_list_bottom) %>    
+
+<% end %>
+
+<% content_for(:header_tags) do %>
+	<%= javascript_include_tag :contacts, :plugin => 'redmine_contacts'  %>
+  	<%= stylesheet_link_tag :contacts, :plugin => 'redmine_contacts' %> 
+	<%= auto_discovery_link_tag(:atom, {:format => 'atom', :key => User.current.rss_key}, :title => l(:label_contact_plural)) %>
+ 
+<% end %>     
+

@@ -1,0 +1,2555 @@
+# Logfile created on Wed Nov 30 11:22:10 +1100 2011
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 11:31:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 128ms (View: 27, DB: 80) | 200 OK [http://0.0.0.0/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 11:31:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 11:31:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 34ms (View: 25, DB: 2) | 200 OK [http://0.0.0.0/projects]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 11:31:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 11:57:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 101ms (View: 80, DB: 5) | 200 OK [http://rredmine.com/]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 11:57:45) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://rredmine.com/login]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 11:57:48) [GET]
+  Parameters: {"action"=>"register", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/register
+Completed in 83ms (View: 73, DB: 4) | 200 OK [http://rredmine.com/account/register]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 11:58:08) [POST]
+  Parameters: {"commit"=>"Submit", "password_confirmation"=>"[FILTERED]", "action"=>"register", "authenticity_token"=>"Xprxg1q6UBT4AHHNBQZsaIEnUr/iwdUNHO4QdvRmH50=", "controller"=>"account", "user"=>{"language"=>"en", "mail"=>"hone@hone.be", "lastname"=>"Watson", "firstname"=>"Hone", "login"=>"admin"}, "password"=>"[FILTERED]"}
+Rendering template within layouts/base
+Rendering account/register
+Completed in 193ms (View: 17, DB: 4) | 200 OK [http://rredmine.com/account/register]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 11:58:13) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://rredmine.com/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 11:58:16) [POST]
+  Parameters: {"back_url"=>"http%3A%2F%2Frredmine.com%2Faccount%2Fregister", "action"=>"login", "authenticity_token"=>"Xprxg1q6UBT4AHHNBQZsaIEnUr/iwdUNHO4QdvRmH50=", "username"=>"admin", "controller"=>"account", "password"=>"[FILTERED]", "login"=>"Login »"}
+Redirected to http://rredmine.com/my/page
+Completed in 32ms (DB: 27) | 302 Found [http://rredmine.com/login]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 11:58:16) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 195ms (View: 39, DB: 149) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-11-30 11:58:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/base
+Rendering users/show
+Completed in 97ms (View: 19, DB: 14) | 200 OK [http://rredmine.com/users/1]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 11:58:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 40ms (View: 23, DB: 2) | 200 OK [http://rredmine.com/admin]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-11-30 11:58:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 27ms (View: 16, DB: 3) | 200 OK [http://rredmine.com/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-11-30 11:58:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/edit
+Completed in 3972ms (View: 3908, DB: 6) | 200 OK [http://rredmine.com/users/1/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2011-11-30 11:58:50) [PUT]
+  Parameters: {"commit"=>"Save", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "id"=>"1", "pref"=>{"hide_mail"=>"0", "warn_on_leaving_unsaved"=>"1", "comments_sorting"=>"asc", "time_zone"=>""}, "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "admin"=>"1", "language"=>"en", "mail"=>"hone@hone.be", "lastname"=>"Admin", "firstname"=>"Redmine", "mail_notification"=>"all", "password"=>"[FILTERED]", "login"=>"admin"}}
+Redirected to http://rredmine.com/users/1/edit
+Completed in 219ms (DB: 63) | 302 Found [http://rredmine.com/users/1]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-11-30 11:58:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/edit
+Completed in 3957ms (View: 3886, DB: 6) | 200 OK [http://rredmine.com/users/1/edit]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 11:58:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 19ms (View: 10, DB: 2) | 200 OK [http://rredmine.com/]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 11:58:59) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 94ms (View: 87, DB: 3) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 11:58:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 11:59:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-11-30 11:59:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://rredmine.com/users]
+
+
+Processing IssueStatusesController#index (for 127.0.0.1 at 2011-11-30 11:59:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"issue_statuses"}
+Rendering template within layouts/admin
+Rendering issue_statuses/index
+Completed in 57ms (View: 48, DB: 2) | 200 OK [http://rredmine.com/issue_statuses]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 12:59:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 83ms (View: 72, DB: 5) | 200 OK [http://rredmine.com/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 12:59:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 113ms (View: 40, DB: 4) | 200 OK [http://rredmine.com/admin]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 12:59:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 12:59:38) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 30ms (View: 21, DB: 4) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 12:59:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 84ms (View: 73, DB: 5) | 200 OK [http://rredmine.com/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-11-30 12:59:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/base
+Rendering users/show
+Completed in 48ms (View: 9, DB: 7) | 200 OK [http://rredmine.com/users/1]
+
+
+Processing MyController#account (for 127.0.0.1 at 2011-11-30 12:59:41) [GET]
+  Parameters: {"action"=>"account", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/account
+Completed in 4170ms (View: 4167, DB: 1) | 200 OK [http://rredmine.com/my/account]
+
+
+Processing MyController#account (for 127.0.0.1 at 2011-11-30 12:59:43) [GET]
+  Parameters: {"action"=>"account", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/account
+Completed in 4210ms (View: 4126, DB: 4) | 200 OK [http://rredmine.com/my/account]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 12:59:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 32ms (View: 14, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 12:59:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 605ms (View: 503, DB: 13) | 200 OK [http://rredmine.com/settings]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:00:23) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"red-andy"}, "controller"=>"settings", "tab"=>"display"}
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 253ms (DB: 233) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:00:24) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 353ms (View: 295, DB: 46) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 13:00:28) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering my/page
+Completed in 29ms (View: 20, DB: 4) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 13:00:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 39ms (View: 28, DB: 4) | 200 OK [http://rredmine.com/projects]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 13:00:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://rredmine.com/admin]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 13:01:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 29ms (View: 21, DB: 3) | 200 OK [http://rredmine.com/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 13:10:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 83ms (View: 72, DB: 5) | 200 OK [http://rredmine.com/]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 13:10:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 85ms (View: 74, DB: 4) | 200 OK [http://rredmine.com/]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 13:10:11) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 98ms (View: 86, DB: 7) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 13:10:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 29ms (View: 14, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 13:10:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 345ms (View: 270, DB: 9) | 200 OK [http://rredmine.com/settings]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:10:22) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"redmine-theme-innerboard"}, "controller"=>"settings", "tab"=>"display"}
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 59ms (DB: 44) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:10:22) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 269ms (View: 237, DB: 15) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 13:10:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:29) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 13:10:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 25ms (View: 7, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:30) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#projects (for 127.0.0.1 at 2011-11-30 13:10:32) [GET]
+  Parameters: {"action"=>"projects", "controller"=>"admin"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering admin/projects
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://rredmine.com/admin/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:32) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 13:10:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 74ms (View: 69, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 13:10:34) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering my/page
+Completed in 53ms (View: 39, DB: 7) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:35) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 13:10:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:35) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 13:10:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 91ms (View: 12, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:36) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:39) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 13:10:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 292ms (View: 275, DB: 6) | 200 OK [http://rredmine.com/settings]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:10:42) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-11-30 13:11:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+Rendering template within layouts/admin
+Rendering roles/index
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://rredmine.com/roles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:03) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing TrackersController#index (for 127.0.0.1 at 2011-11-30 13:11:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"trackers"}
+Rendering template within layouts/admin
+Rendering trackers/index
+Completed in 36ms (View: 28, DB: 2) | 200 OK [http://rredmine.com/trackers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:03) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing IssueStatusesController#index (for 127.0.0.1 at 2011-11-30 13:11:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"issue_statuses"}
+Rendering template within layouts/admin
+Rendering issue_statuses/index
+Completed in 52ms (View: 48, DB: 1) | 200 OK [http://rredmine.com/issue_statuses]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:04) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing WorkflowsController#edit (for 127.0.0.1 at 2011-11-30 13:11:05) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"workflows"}
+Rendering template within layouts/admin
+Rendering workflows/edit
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://rredmine.com/workflows/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:05) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing CustomFieldsController#index (for 127.0.0.1 at 2011-11-30 13:11:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"custom_fields"}
+Rendering template within layouts/admin
+Rendering custom_fields/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://rredmine.com/custom_fields]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing EnumerationsController#index (for 127.0.0.1 at 2011-11-30 13:11:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"enumerations"}
+Rendering template within layouts/admin
+Rendering enumerations/index
+Completed in 61ms (View: 53, DB: 3) | 200 OK [http://rredmine.com/enumerations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 13:11:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 234ms (View: 210, DB: 6) | 200 OK [http://rredmine.com/settings]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 13:11:08) [GET]
+
+ActionController::RoutingError (No route matches "/themes/innerboard/images/bg6.jpg" with {:method=>:get}):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:11:13) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"red-andy"}, "controller"=>"settings", "tab"=>"display"}
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 69ms (DB: 53) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:11:13) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 143ms (View: 129, DB: 12) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:23:34) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 306ms (View: 222, DB: 16) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:23:43) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"redjourn"}, "controller"=>"settings", "tab"=>"display"}
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 136ms (DB: 68) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:23:44) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 342ms (View: 260, DB: 17) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:23:57) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"chiliproject"}, "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 134ms (DB: 57) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 13:23:57) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 288ms (View: 253, DB: 17) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing AdminController#projects (for 127.0.0.1 at 2011-11-30 13:24:01) [GET]
+  Parameters: {"action"=>"projects", "controller"=>"admin"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering admin/projects
+Completed in 90ms (View: 26, DB: 3) | 200 OK [http://rredmine.com/admin/projects]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-11-30 13:24:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://rredmine.com/users]
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2011-11-30 13:24:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"groups"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering groups/index
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://rredmine.com/groups]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-11-30 13:24:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+Rendering template within layouts/admin
+Rendering roles/index
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://rredmine.com/roles]
+
+
+Processing TrackersController#index (for 127.0.0.1 at 2011-11-30 13:24:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"trackers"}
+Rendering template within layouts/admin
+Rendering trackers/index
+Completed in 44ms (View: 36, DB: 2) | 200 OK [http://rredmine.com/trackers]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 13:24:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 20ms (View: 16, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2011-11-30 13:26:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/new
+Completed in 89ms (View: 76, DB: 3) | 200 OK [http://rredmine.com/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2011-11-30 13:26:05) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "project"=>{"name"=>"Test", "tracker_ids"=>["1", "2", "3", ""], "homepage"=>"", "is_public"=>"1", "description"=>"", "identifier"=>"", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", ""]}, "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/new
+Completed in 109ms (View: 31, DB: 5) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2011-11-30 13:26:16) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "project"=>{"name"=>"Test", "tracker_ids"=>["1", "2", "3", ""], "homepage"=>"", "is_public"=>"1", "description"=>"", "identifier"=>"test", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", ""]}, "controller"=>"projects"}
+Redirected to http://rredmine.com/projects/test/settings
+Completed in 97ms (DB: 62) | 302 Found [http://rredmine.com/projects]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 13:26:16) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 144ms (View: 125, DB: 10) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 13:26:19) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 89ms (View: 39, DB: 10) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 13:26:20) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 155ms (View: 113, DB: 14) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 13:26:20) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 57ms (View: 21, DB: 5) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 13:26:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 99ms (View: 73, DB: 13) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 13:26:22) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 87ms (View: 13, DB: 2) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 13:26:23) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 78ms (View: 45, DB: 4) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 13:26:23) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 158ms (View: 76, DB: 11) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing CalendarsController#show (for 127.0.0.1 at 2011-11-30 13:26:24) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"calendars"}
+Rendering template within layouts/base
+Rendering calendars/show
+Completed in 166ms (View: 50, DB: 4) | 200 OK [http://rredmine.com/projects/test/issues/calendar]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2011-11-30 13:26:24) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"news"}
+Rendering template within layouts/base
+Rendering news/index
+Completed in 32ms (View: 19, DB: 2) | 200 OK [http://rredmine.com/projects/test/news]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2011-11-30 13:26:25) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"documents"}
+Rendering template within layouts/base
+Rendering documents/index
+Completed in 92ms (View: 79, DB: 4) | 200 OK [http://rredmine.com/projects/test/documents]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 13:26:25) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 46ms (View: 26, DB: 3) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing FilesController#index (for 127.0.0.1 at 2011-11-30 13:26:26) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"files"}
+Rendering template within layouts/base
+Rendering files/index
+Completed in 83ms (View: 14, DB: 7) | 200 OK [http://rredmine.com/projects/test/files]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 13:26:27) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 56ms (View: 44, DB: 4) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 13:26:30) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 15:36:48) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 114ms (View: 89, DB: 5) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing GanttsController#show (for 127.0.0.1 at 2011-11-30 15:36:49) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"gantts"}
+Rendering template within layouts/base
+Rendering gantts/show
+Completed in 148ms (View: 43, DB: 57) | 200 OK [http://rredmine.com/projects/test/issues/gantt]
+
+
+Processing CalendarsController#show (for 127.0.0.1 at 2011-11-30 15:36:49) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"calendars"}
+Rendering template within layouts/base
+Rendering calendars/show
+Completed in 77ms (View: 39, DB: 5) | 200 OK [http://rredmine.com/projects/test/issues/calendar]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2011-11-30 15:36:50) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"news"}
+Rendering template within layouts/base
+Rendering news/index
+Completed in 92ms (View: 80, DB: 1) | 200 OK [http://rredmine.com/projects/test/news]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2011-11-30 15:36:51) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"news"}
+Rendering template within layouts/base
+Rendering news/index
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://rredmine.com/projects/test/news]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2011-11-30 15:36:51) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"documents"}
+Rendering template within layouts/base
+Rendering documents/index
+Completed in 41ms (View: 27, DB: 2) | 200 OK [http://rredmine.com/projects/test/documents]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 15:36:53) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 35ms (View: 19, DB: 2) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 15:36:53) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 116ms (View: 102, DB: 6) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 15:37:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 27ms (View: 17, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 15:37:07) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 35ms (View: 12, DB: 2) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 15:37:07) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 110ms (View: 92, DB: 2) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 15:37:08) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 51ms (View: 30, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing GanttsController#show (for 127.0.0.1 at 2011-11-30 15:37:09) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"gantts"}
+Rendering template within layouts/base
+Rendering gantts/show
+Completed in 86ms (View: 58, DB: 2) | 200 OK [http://rredmine.com/projects/test/issues/gantt]
+
+
+Processing CalendarsController#show (for 127.0.0.1 at 2011-11-30 15:37:10) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"calendars"}
+Rendering template within layouts/base
+Rendering calendars/show
+Completed in 57ms (View: 33, DB: 1) | 200 OK [http://rredmine.com/projects/test/issues/calendar]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2011-11-30 15:37:11) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"news"}
+Rendering template within layouts/base
+Rendering news/index
+Completed in 80ms (View: 13, DB: 1) | 200 OK [http://rredmine.com/projects/test/news]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2011-11-30 15:37:12) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"documents"}
+Rendering template within layouts/base
+Rendering documents/index
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://rredmine.com/projects/test/documents]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 15:37:13) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 15:37:14) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 46ms (View: 38, DB: 2) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 15:37:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 15:37:16) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 89ms (View: 23, DB: 4) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 15:37:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 15:37:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 18ms (View: 10, DB: 2) | 200 OK [http://rredmine.com/]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 15:37:19) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 79ms (View: 17, DB: 1) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 15:37:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 15:37:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 15:37:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 24ms (View: 8, DB: 1) | 200 OK [http://rredmine.com/admin]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 15:38:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 15:38:25) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 15:38:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 15:38:31) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 15:38:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 15:38:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 33ms (View: 18, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing MyController#account (for 127.0.0.1 at 2011-11-30 16:11:10) [GET]
+  Parameters: {"action"=>"account", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/account
+Completed in 3995ms (View: 3988, DB: 2) | 200 OK [http://rredmine.com/my/account]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 16:11:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 49ms (View: 33, DB: 3) | 200 OK [http://rredmine.com/admin]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 16:11:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 703ms (View: 678, DB: 8) | 200 OK [http://rredmine.com/settings]
+
+
+Processing AdminController#plugins (for 127.0.0.1 at 2011-11-30 16:11:28) [GET]
+  Parameters: {"action"=>"plugins", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/plugins
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://rredmine.com/admin/plugins]
+
+
+Processing AdminController#plugins (for 127.0.0.1 at 2011-11-30 16:11:49) [GET]
+  Parameters: {"action"=>"plugins", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/plugins
+Completed in 32ms (View: 24, DB: 3) | 200 OK [http://rredmine.com/admin/plugins]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 16:11:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 58ms (View: 56, DB: 0) | 200 OK [http://rredmine.com/settings]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 16:11:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 49ms (View: 37, DB: 2) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 16:11:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 267ms (View: 102, DB: 152) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 16:12:00) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 60ms (View: 34, DB: 5) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 16:13:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://rredmine.com/]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:13:31) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://rredmine.com/login]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 16:13:37) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 230ms (View: 217, DB: 3) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 16:13:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 32ms (View: 14, DB: 0) | 200 OK [http://rredmine.com/admin]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-11-30 16:13:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/admin
+Rendering users/index
+Completed in 34ms (View: 25, DB: 1) | 200 OK [http://rredmine.com/users]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 16:13:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 54ms (View: 51, DB: 0) | 200 OK [http://rredmine.com/settings]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 16:20:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 335ms (View: 265, DB: 3) | 200 OK [http://rredmine.com/settings]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 16:20:43) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"lost_password"=>"[FILTERED]", "password_min_length"=>"[FILTERED]", "autologin"=>"0", "self_registration"=>"2", "rest_api_enabled"=>"0", "openid"=>"1", "login_required"=>"0"}, "controller"=>"settings", "tab"=>"authentication"}
+Redirected to http://rredmine.com/settings/edit?tab=authentication
+Completed in 374ms (DB: 291) | 302 Found [http://rredmine.com/settings/edit?tab=authentication]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 16:20:43) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"authentication"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 151ms (View: 149, DB: 0) | 200 OK [http://rredmine.com/settings/edit?tab=authentication]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 16:21:05) [GET]
+  Parameters: {"action"=>"register", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/register
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://rredmine.com/account/register]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:21:08) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering account/login
+Completed in 87ms (View: 18, DB: 2) | 200 OK [http://rredmine.com/login]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 16:28:17) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"authentication"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 317ms (View: 247, DB: 2) | 200 OK [http://rredmine.com/settings/edit?tab=authentication]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:28:22) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 86ms (View: 80, DB: 2) | 200 OK [http://rredmine.com/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:28:24) [POST]
+  Parameters: {"back_url"=>"http%3A%2F%2Frredmine.com%2Faccount%2Fregister", "openid_url"=>"https://www.google.com/accounts/o8/id", "action"=>"login", "authenticity_token"=>"rQIySXnHACLEWafZbFjxaQrciAZp03P1O6tgdd5V/uM=", "username"=>"", "controller"=>"account", "password"=>"[FILTERED]"}
+WARNING: making https request to https://www.google.com/accounts/o8/id without verifying server certificate; no CA path was specified.
+WARNING: making https request to https://www.google.com/accounts/o8/ud without verifying server certificate; no CA path was specified.
+Generated checkid_setup request to https://www.google.com/accounts/o8/ud with assocication AMlYA9VB9VYFRWX31uqcKbcNTbljDsqByZ_oehywkY-NhzGGljSU2VOT
+Redirected to https://www.google.com/accounts/o8/ud?openid.assoc_handle=AMlYA9VB9VYFRWX31uqcKbcNTbljDsqByZ_oehywkY-NhzGGljSU2VOT&openid.ax.mode=fetch_request&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.ax=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.realm=http%3A%2F%2Frredmine.com%2F&openid.return_to=http%3A%2F%2Frredmine.com%2Flogin%3F_method%3Dpost%26open_id_complete%3D1&openid.sreg.required=nickname%2Cfullname%2Cemail
+Completed in 1300ms (DB: 65) | 302 Found [http://rredmine.com/login]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:28:33) [POST]
+  Parameters: {"openid.mode"=>"id_res", "openid.op_endpoint"=>"https://www.google.com/accounts/o8/ud", "openid.return_to"=>"http://rredmine.com/login?_method=post&open_id_complete=1", "openid.sig"=>"7Gma8OTv7vu/9uNDbFkRVBMOZ0o=", "openid.response_nonce"=>"2011-11-30T05:28:32ZxkMYP_h0gaWEHw", "openid.ns"=>"http://specs.openid.net/auth/2.0", "action"=>"login", "_method"=>"post", "openid.identity"=>"https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA", "openid.assoc_handle"=>"AMlYA9VB9VYFRWX31uqcKbcNTbljDsqByZ_oehywkY-NhzGGljSU2VOT", "openid.signed"=>"op_endpoint,claimed_id,identity,return_to,response_nonce,assoc_handle", "controller"=>"account", "open_id_complete"=>"1", "openid.claimed_id"=>"https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA"}
+No pre-discovered information supplied
+Performing discovery on https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA
+WARNING: making https request to https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA without verifying server certificate; no CA path was specified.
+Rendering template within layouts/base
+Rendering account/register
+Completed in 689ms (View: 93, DB: 221) | 200 OK [http://rredmine.com/login?_method=post&open_id_complete=1&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2011-11-30T05%3A28%3A32ZxkMYP_h0gaWEHw&openid.return_to=http%3A%2F%2Frredmine.com%2Flogin%3F_method%3Dpost%26open_id_complete%3D1&openid.assoc_handle=AMlYA9VB9VYFRWX31uqcKbcNTbljDsqByZ_oehywkY-NhzGGljSU2VOT&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle&openid.sig=7Gma8OTv7vu%2F9uNDbFkRVBMOZ0o%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 16:29:06) [POST]
+  Parameters: {"commit"=>"Submit", "password_confirmation"=>"[FILTERED]", "action"=>"register", "authenticity_token"=>"Y9ronp6j7VZb6FKyD6Uy/5/HA3DWLtgHmQCblozzegU=", "controller"=>"account", "user"=>{"language"=>"", "mail"=>"dude@honewatson.com", "lastname"=>"Watson", "firstname"=>"Hone", "identity_url"=>"https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA", "login"=>"Dude Watson"}, "password"=>"[FILTERED]"}
+Rendering template within layouts/base
+Rendering account/register
+Completed in 180ms (View: 21, DB: 14) | 200 OK [http://rredmine.com/account/register]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 16:29:19) [POST]
+  Parameters: {"commit"=>"Submit", "password_confirmation"=>"[FILTERED]", "action"=>"register", "authenticity_token"=>"Y9ronp6j7VZb6FKyD6Uy/5/HA3DWLtgHmQCblozzegU=", "controller"=>"account", "user"=>{"language"=>"en", "mail"=>"dude@honewatson.com", "lastname"=>"Watson", "firstname"=>"Hone", "identity_url"=>"https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA", "login"=>"Dude Watson"}, "password"=>"[FILTERED]"}
+Rendering template within layouts/base
+Rendering account/register
+Completed in 113ms (View: 11, DB: 1) | 200 OK [http://rredmine.com/account/register]
+
+
+Processing AccountController#register (for 127.0.0.1 at 2011-11-30 16:29:31) [POST]
+  Parameters: {"commit"=>"Submit", "password_confirmation"=>"[FILTERED]", "action"=>"register", "authenticity_token"=>"Y9ronp6j7VZb6FKyD6Uy/5/HA3DWLtgHmQCblozzegU=", "controller"=>"account", "user"=>{"language"=>"en", "mail"=>"dude@honewatson.com", "lastname"=>"Watson", "firstname"=>"Hone", "identity_url"=>"https://www.google.com/accounts/o8/id?id=AItOawmNYqN4QFpDdwssZ5I_mtw-bbnTq99HvnA", "login"=>"dudewatson"}, "password"=>"[FILTERED]"}
+Sending email notification to: hone@hone.be
+Redirected to http://rredmine.com/login
+Completed in 239ms (DB: 36) | 302 Found [http://rredmine.com/account/register]
+
+
+Processing AccountController#login (for 127.0.0.1 at 2011-11-30 16:29:31) [GET]
+  Parameters: {"action"=>"login", "controller"=>"account"}
+Rendering template within layouts/base
+Rendering account/login
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://rredmine.com/login]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 17:47:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 49ms (View: 14, DB: 2) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:47:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 120ms (View: 114, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:47:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 162ms (View: 82, DB: 26) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 17:47:42) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 213ms (View: 148, DB: 7) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing IssuesController#create (for 127.0.0.1 at 2011-11-30 17:47:55) [POST]
+  Parameters: {"commit"=>"Create", "project_id"=>"test", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "issue"=>{"start_date"=>"2011-11-30", "estimated_hours"=>"", "parent_issue_id"=>"", "priority_id"=>"4", "is_private"=>"0", "done_ratio"=>"0", "assigned_to_id"=>"", "subject"=>"Blah", "tracker_id"=>"1", "due_date"=>"", "status_id"=>"1", "description"=>""}, "controller"=>"issues", "attachments"=>{"1"=>{"description"=>""}}}
+Sending email notification to: hone@hone.be
+Redirected to http://rredmine.com/issues/1
+Completed in 188ms (DB: 60) | 302 Found [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:47:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 281ms (View: 157, DB: 14) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing TimelogController#new (for 127.0.0.1 at 2011-11-30 17:47:59) [GET]
+  Parameters: {"issue_id"=>"1", "action"=>"new", "controller"=>"timelog"}
+Rendering template within layouts/base
+Rendering timelog/edit
+Completed in 31ms (View: 16, DB: 2) | 200 OK [http://rredmine.com/issues/1/time_entries/new]
+
+
+Processing TimelogController#create (for 127.0.0.1 at 2011-11-30 17:48:09) [POST]
+  Parameters: {"time_entry"=>{"comments"=>"", "issue_id"=>"1", "activity_id"=>"9", "spent_on"=>"2011-11-30", "hours"=>"0.5"}, "back_url"=>"http%3A%2F%2Frredmine.com%2Fissues%2F1", "commit"=>"Save", "project_id"=>"test", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "controller"=>"timelog"}
+Redirected to http://rredmine.com/issues/1
+Completed in 106ms (DB: 90) | 302 Found [http://rredmine.com/projects/test/timelog/create]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:48:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 196ms (View: 172, DB: 5) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing NewsController#index (for 127.0.0.1 at 2011-11-30 17:48:23) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"news"}
+Rendering template within layouts/base
+Rendering news/index
+Completed in 73ms (View: 26, DB: 37) | 200 OK [http://rredmine.com/projects/test/news]
+
+
+Processing CalendarsController#show (for 127.0.0.1 at 2011-11-30 17:48:24) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"calendars"}
+Rendering template within layouts/base
+Rendering calendars/show
+Completed in 226ms (View: 177, DB: 10) | 200 OK [http://rredmine.com/projects/test/issues/calendar]
+
+
+Processing GanttsController#show (for 127.0.0.1 at 2011-11-30 17:48:25) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"gantts"}
+Rendering template within layouts/base
+Rendering gantts/show
+Completed in 137ms (View: 114, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues/gantt]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 17:48:26) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 132ms (View: 113, DB: 2) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 17:48:27) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 223ms (View: 170, DB: 12) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 17:48:28) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 197ms (View: 46, DB: 8) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:48:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 57ms (View: 19, DB: 23) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 17:48:34) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Completed in 45ms (View: 0, DB: 4) | 304 Not Modified [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:48:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 70ms (View: 50, DB: 2) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 17:48:44) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "issue"=>{"parent_issue_id"=>"1"}, "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 98ms (View: 82, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues/new?issue%5Bparent_issue_id%5D=1]
+
+
+Processing IssuesController#create (for 127.0.0.1 at 2011-11-30 17:48:52) [POST]
+  Parameters: {"commit"=>"Create", "project_id"=>"test", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "issue"=>{"start_date"=>"2011-11-30", "estimated_hours"=>"", "parent_issue_id"=>"1", "priority_id"=>"4", "is_private"=>"0", "done_ratio"=>"0", "assigned_to_id"=>"", "subject"=>"Blah Blah", "tracker_id"=>"1", "due_date"=>"", "status_id"=>"1", "description"=>""}, "controller"=>"issues", "attachments"=>{"1"=>{"description"=>""}}}
+Sending email notification to: hone@hone.be
+Redirected to http://rredmine.com/issues/2
+Completed in 177ms (DB: 63) | 302 Found [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:48:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 89ms (View: 70, DB: 3) | 200 OK [http://rredmine.com/issues/2]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:49:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 126ms (View: 107, DB: 3) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:49:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 72ms (View: 60, DB: 2) | 200 OK [http://rredmine.com/issues/2]
+
+
+Processing TimelogController#new (for 127.0.0.1 at 2011-11-30 17:49:07) [GET]
+  Parameters: {"issue_id"=>"2", "action"=>"new", "controller"=>"timelog"}
+Rendering template within layouts/base
+Rendering timelog/edit
+Completed in 85ms (View: 74, DB: 1) | 200 OK [http://rredmine.com/issues/2/time_entries/new]
+
+
+Processing TimelogController#create (for 127.0.0.1 at 2011-11-30 17:49:15) [POST]
+  Parameters: {"time_entry"=>{"comments"=>"", "issue_id"=>"2", "activity_id"=>"9", "spent_on"=>"2011-11-30", "hours"=>"0.5"}, "back_url"=>"http%3A%2F%2Frredmine.com%2Fissues%2F2", "commit"=>"Save", "project_id"=>"test", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "controller"=>"timelog"}
+Redirected to http://rredmine.com/issues/2
+Completed in 46ms (DB: 33) | 302 Found [http://rredmine.com/projects/test/timelog/create]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:49:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 254ms (View: 218, DB: 14) | 200 OK [http://rredmine.com/issues/2]
+
+
+Processing IssuesController#update (for 127.0.0.1 at 2011-11-30 17:49:33) [PUT]
+  Parameters: {"time_entry"=>{"comments"=>"", "activity_id"=>"", "hours"=>""}, "commit"=>"Submit", "notes"=>"", "action"=>"update", "_method"=>"put", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "id"=>"2", "issue"=>{"start_date"=>"2011-11-30", "estimated_hours"=>"", "parent_issue_id"=>"1", "priority_id"=>"4", "is_private"=>"0", "lock_version"=>"0", "done_ratio"=>"100", "assigned_to_id"=>"", "subject"=>"Blah Blah", "tracker_id"=>"1", "due_date"=>"", "description"=>""}, "controller"=>"issues", "attachments"=>{"1"=>{"description"=>""}}}
+Sending email notification to: hone@hone.be
+Redirected to http://rredmine.com/issues/2
+Completed in 126ms (DB: 70) | 302 Found [http://rredmine.com/issues/2]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 17:49:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 164ms (View: 142, DB: 3) | 200 OK [http://rredmine.com/issues/2]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 17:49:40) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 45ms (View: 19, DB: 3) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 17:49:42) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 119ms (View: 98, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 17:49:58) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Completed in 95ms (View: 0, DB: 3) | 304 Not Modified [http://rredmine.com/projects/test/activity]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:49:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 92ms (View: 17, DB: 3) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing TimelogController#index (for 127.0.0.1 at 2011-11-30 17:50:03) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"timelog"}
+Rendering template within layouts/base
+Rendering timelog/index
+Completed in 92ms (View: 45, DB: 28) | 200 OK [http://rredmine.com/projects/test/time_entries]
+
+
+Processing TimeEntryReportsController#report (for 127.0.0.1 at 2011-11-30 17:50:11) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"report", "controller"=>"time_entry_reports"}
+Rendering template within layouts/base
+Rendering time_entry_reports/report
+Completed in 42ms (View: 23, DB: 3) | 200 OK [http://rredmine.com/projects/test/time_entries/report]
+
+
+Processing TimeEntryReportsController#report (for 127.0.0.1 at 2011-11-30 17:50:16) [GET]
+  Parameters: {"criterias"=>["issue"], "project_id"=>"test", "period"=>"all", "action"=>"report", "period_type"=>"1", "controller"=>"time_entry_reports", "columns"=>"month"}
+Rendering template within layouts/base
+Rendering time_entry_reports/report
+Completed in 79ms (View: 36, DB: 33) | 200 OK [http://rredmine.com/projects/test/time_entries/report?period_type=1&period=all&columns=month&criterias%5B%5D=issue]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 17:50:26) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 126ms (View: 117, DB: 1) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ProjectsController#modules (for 127.0.0.1 at 2011-11-30 17:50:37) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"modules", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "id"=>"test", "controller"=>"projects", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", "wiki_extensions"]}
+Redirected to http://rredmine.com/projects/test/settings/modules
+Completed in 64ms (DB: 49) | 302 Found [http://rredmine.com/projects/test/modules]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 17:50:37) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects", "tab"=>"modules"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 244ms (View: 235, DB: 1) | 200 OK [http://rredmine.com/projects/test/settings/modules]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2011-11-30 17:50:39) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"wiki"}
+Rendering template within layouts/base
+Rendering wiki/edit
+Completed in 36ms (View: 19, DB: 2) | 200 OK [http://rredmine.com/projects/test/wiki]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:50:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 38ms (View: 21, DB: 3) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 17:50:43) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Completed in 27ms (View: 0, DB: 4) | 304 Not Modified [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 17:50:44) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 146ms (View: 120, DB: 4) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 17:50:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 47ms (View: 9, DB: 0) | 200 OK [http://rredmine.com/admin]
+
+
+Processing IssueStatusesController#index (for 127.0.0.1 at 2011-11-30 17:50:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"issue_statuses"}
+Rendering template within layouts/admin
+Rendering issue_statuses/index
+Completed in 51ms (View: 44, DB: 1) | 200 OK [http://rredmine.com/issue_statuses]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:51:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:51:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 84ms (View: 14, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:51:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 17:51:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 31ms (View: 16, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:51:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2011-11-30 17:51:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/new
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://rredmine.com/projects/new]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 17:51:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:52:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 17:52:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:52:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 76ms (View: 8, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 17:52:03) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 35ms (View: 28, DB: 0) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 17:52:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 17:52:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://rredmine.com/admin]
+
+
+Processing IssueStatusesController#index (for 127.0.0.1 at 2011-11-30 17:52:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"issue_statuses"}
+Rendering template within layouts/admin
+Rendering issue_statuses/index
+Completed in 121ms (View: 113, DB: 1) | 200 OK [http://rredmine.com/issue_statuses]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 18:15:47) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 114ms (View: 105, DB: 4) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:15:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 101ms (View: 94, DB: 2) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:15:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 134ms (View: 110, DB: 8) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing MytodosController#index (for 127.0.0.1 at 2011-11-30 18:15:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"mytodos"}
+Rendering template within layouts/base
+Rendering mytodos/index
+
+ActionView::TemplateError (No plugin called 'redmine_todos_plugin' - please use the full name of a loaded plugin.) on line #2 of vendor/plugins/redmine-todos-scrum-plugin/app/views/mytodos/index.html.erb:
+1: <% content_for :header_tags do %>
+2:     <%= stylesheet_link_tag 'todos', :plugin => 'redmine_todos_plugin' %>
+3:     <%= stylesheet_link_tag 'todos_print', :plugin => 'redmine_todos_plugin', :media => 'print' %>
+4: <% end %>
+5: 
+
+    vendor/plugins/redmine-todos-scrum-plugin/app/views/mytodos/index.html.erb:2
+    app/helpers/application_helper.rb:980:in `content_for'
+    vendor/plugins/redmine-todos-scrum-plugin/app/views/mytodos/index.html.erb:1
+    thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+    thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+    thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+    thin (1.3.1) lib/thin/connection.rb:53:in `process'
+    thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+    thin (1.3.1) lib/thin/server.rb:159:in `start'
+    thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+    thin (1.3.1) lib/thin/runner.rb:185:in `send'
+    thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+    thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+    thin (1.3.1) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-11-30 18:15:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/base
+Rendering users/show
+Completed in 198ms (View: 28, DB: 12) | 200 OK [http://rredmine.com/users/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:16:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 18:16:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 30ms (View: 15, DB: 0) | 200 OK [http://rredmine.com/admin]
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 18:16:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 751ms (View: 730, DB: 3) | 200 OK [http://rredmine.com/settings]
+
+
+Processing AdminController#plugins (for 127.0.0.1 at 2011-11-30 18:16:12) [GET]
+  Parameters: {"action"=>"plugins", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/plugins
+Completed in 32ms (View: 26, DB: 0) | 200 OK [http://rredmine.com/admin/plugins]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:16:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 70ms (View: 67, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 18:16:18) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 40ms (View: 33, DB: 0) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:16:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 100ms (View: 93, DB: 1) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:16:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 122ms (View: 102, DB: 5) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 18:16:22) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 229ms (View: 218, DB: 2) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ProjectsController#modules (for 127.0.0.1 at 2011-11-30 18:16:29) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"modules", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "id"=>"test", "controller"=>"projects", "enabled_module_names"=>["issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", "todo_lists", "wiki_extensions"]}
+Redirected to http://rredmine.com/projects/test/settings/modules
+Completed in 51ms (DB: 41) | 302 Found [http://rredmine.com/projects/test/modules]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 18:16:29) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects", "tab"=>"modules"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 271ms (View: 253, DB: 3) | 200 OK [http://rredmine.com/projects/test/settings/modules]
+
+
+Processing TodosController#index (for 127.0.0.1 at 2011-11-30 18:16:32) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+Rendering template within layouts/base
+Rendering todos/index
+
+ActionView::TemplateError (No plugin called 'redmine_todos_plugin' - please use the full name of a loaded plugin.) on line #2 of vendor/plugins/redmine-todos-scrum-plugin/app/views/todos/index.html.erb:
+1: <% content_for :header_tags do %>
+2:     <%= stylesheet_link_tag 'todos', :plugin => 'redmine_todos_plugin' %>
+3:     <%= stylesheet_link_tag 'todos_print', :plugin => 'redmine_todos_plugin', :media => 'print' %>
+4: <% end %>
+5: 
+
+    vendor/plugins/redmine-todos-scrum-plugin/app/views/todos/index.html.erb:2
+    app/helpers/application_helper.rb:980:in `content_for'
+    vendor/plugins/redmine-todos-scrum-plugin/app/views/todos/index.html.erb:1
+    thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+    thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+    thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+    thin (1.3.1) lib/thin/connection.rb:53:in `process'
+    thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+    thin (1.3.1) lib/thin/server.rb:159:in `start'
+    thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+    thin (1.3.1) lib/thin/runner.rb:185:in `send'
+    thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+    thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+    thin (1.3.1) bin/thin:6
+    /usr/bin/thin:19:in `load'
+    /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-11-30 18:17:35) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+
+NameError (uninitialized constant TodosController):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:17:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 38ms (View: 21, DB: 4) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 18:17:48) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 163ms (View: 153, DB: 2) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing TodosController#index (for 127.0.0.1 at 2011-11-30 18:22:06) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+Rendering template within layouts/base
+Rendering todos/index
+Completed in 164ms (View: 134, DB: 18) | 200 OK [http://rredmine.com/projects/test/todos]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:22:13) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 232ms (View: 178, DB: 13) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 18:22:16) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 235ms (View: 207, DB: 5) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing TodosController#index (for 127.0.0.1 at 2011-11-30 18:22:27) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+Rendering template within layouts/base
+Rendering todos/index
+Completed in 93ms (View: 24, DB: 9) | 200 OK [http://rredmine.com/projects/test/todos]
+
+
+Processing MytodosController#index (for 127.0.0.1 at 2011-11-30 18:22:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"mytodos"}
+Rendering template within layouts/base
+Rendering mytodos/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://rredmine.com/my/todos]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 18:22:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 78ms (View: 69, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing MytodosController#index (for 127.0.0.1 at 2011-11-30 18:22:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"mytodos"}
+Rendering template within layouts/base
+Rendering mytodos/index
+Completed in 119ms (View: 78, DB: 14) | 200 OK [http://rredmine.com/my/todos]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:22:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 18:22:35) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 75ms (View: 64, DB: 3) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:22:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 34ms (View: 24, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:22:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 35ms (View: 19, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing TodosController#index (for 127.0.0.1 at 2011-11-30 18:22:40) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+Rendering template within layouts/base
+Rendering todos/index
+Completed in 133ms (View: 49, DB: 4) | 200 OK [http://rredmine.com/projects/test/todos]
+
+
+Processing TodosController#create (for 127.0.0.1 at 2011-11-30 18:22:55) [POST]
+  Parameters: {"commit"=>"Create Todo", "project_id"=>"test", "action"=>"create", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "controller"=>"todos", "todo"=>{"issue_id"=>"1", "text"=>"Blah Todo", "parent_id"=>"", "due"=>""}}
+Rendering todos/create.rjs
+Completed in 121ms (View: 1, DB: 0) | 200 OK [http://rredmine.com/projects/test/todos]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 18:23:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 71ms (View: 66, DB: 1) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#test (for 127.0.0.1 at 2011-11-30 18:26:40) [GET]
+  Parameters: {"action"=>"test", "id"=>"todos", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering common/error (404)
+Filter chain halted as [:find_project] rendered_or_redirected.
+Completed in 28ms (View: 19, DB: 3) | 404 Not Found [http://rredmine.com/projects/test/todos]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-11-30 18:26:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 91ms (View: 78, DB: 4) | 200 OK [http://rredmine.com/]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:26:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 141ms (View: 111, DB: 8) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:26:50) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 269ms (View: 166, DB: 11) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 18:27:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/show
+Completed in 285ms (View: 242, DB: 8) | 200 OK [http://rredmine.com/issues/1]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 18:27:09) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 195ms (View: 174, DB: 3) | 200 OK [http://rredmine.com/projects/test/settings]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:27:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 105ms (View: 85, DB: 4) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 18:27:35) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Completed in 107ms (View: 0, DB: 15) | 304 Not Modified [http://rredmine.com/projects/test/activity]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:27:36) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 86ms (View: 57, DB: 4) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing StuffToDoController#index (for 127.0.0.1 at 2011-11-30 18:27:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"stuff_to_do"}
+Rendering template within layouts/base
+Rendering stuff_to_do/index
+Completed in 148ms (View: 25, DB: 8) | 200 OK [http://rredmine.com/stuff_to_do]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 18:27:54) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 35ms (View: 29, DB: 0) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:27:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 32ms (View: 28, DB: 0) | 200 OK [http://rredmine.com/projects]
+
+
+Processing MyController#page (for 127.0.0.1 at 2011-11-30 18:27:56) [GET]
+  Parameters: {"action"=>"page", "controller"=>"my"}
+Rendering template within layouts/base
+Rendering my/page
+Completed in 43ms (View: 36, DB: 0) | 200 OK [http://rredmine.com/my/page]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:27:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 35ms (View: 17, DB: 1) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:28:33) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 152ms (View: 126, DB: 4) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 18:28:33) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 138ms (View: 114, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing GanttsController#show (for 127.0.0.1 at 2011-11-30 18:28:34) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"show", "controller"=>"gantts"}
+Rendering template within layouts/base
+Rendering gantts/show
+Completed in 123ms (View: 103, DB: 2) | 200 OK [http://rredmine.com/projects/test/issues/gantt]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 18:28:36) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 49ms (View: 34, DB: 2) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:28:41) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 143ms (View: 114, DB: 5) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 18:28:43) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Completed in 35ms (View: 0, DB: 4) | 304 Not Modified [http://rredmine.com/projects/test/activity]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:28:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 127ms (View: 107, DB: 4) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:29:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 38ms (View: 22, DB: 2) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ActivitiesController#index (for 127.0.0.1 at 2011-11-30 18:32:23) [GET]
+  Parameters: {"action"=>"index", "id"=>"test", "controller"=>"activities"}
+Rendering template within layouts/base
+Rendering activities/index
+Completed in 207ms (View: 153, DB: 8) | 200 OK [http://rredmine.com/projects/test/activity]
+
+
+Processing ProjectsController#settings (for 127.0.0.1 at 2011-11-30 18:32:27) [GET]
+  Parameters: {"action"=>"settings", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/settings
+Completed in 278ms (View: 261, DB: 5) | 200 OK [http://rredmine.com/projects/test/settings]
+Starting Contact plugin for RedMine
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-11-30 18:36:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/index
+Completed in 45ms (View: 27, DB: 4) | 200 OK [http://rredmine.com/admin]
+Starting Contact plugin for RedMine
+
+
+Processing AdminController#plugins (for 127.0.0.1 at 2011-11-30 18:36:53) [GET]
+  Parameters: {"action"=>"plugins", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/plugins
+Completed in 36ms (View: 28, DB: 3) | 200 OK [http://rredmine.com/admin/plugins]
+
+
+Processing RolesController#index (for 127.0.0.1 at 2011-11-30 18:37:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"roles"}
+Rendering template within layouts/admin
+Rendering roles/index
+Completed in 86ms (View: 80, DB: 1) | 200 OK [http://rredmine.com/roles]
+Starting Contact plugin for RedMine
+
+
+Processing SettingsController#index (for 127.0.0.1 at 2011-11-30 18:37:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"settings"}
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 254ms (View: 239, DB: 2) | 200 OK [http://rredmine.com/settings]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 18:37:34) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"default_projects_modules"=>["", "issue_tracking", "time_tracking", "news", "documents", "files", "wiki", "repository", "boards", "calendar", "gantt", "todo_lists", "wiki_extensions"], "new_project_user_role_id"=>"", "sequential_project_identifiers"=>"0", "default_projects_public"=>"1"}, "controller"=>"settings", "tab"=>"projects"}
+Redirected to http://rredmine.com/settings/edit?tab=projects
+Completed in 192ms (DB: 117) | 302 Found [http://rredmine.com/settings/edit?tab=projects]
+Starting Contact plugin for RedMine
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 18:37:35) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 298ms (View: 278, DB: 3) | 200 OK [http://rredmine.com/settings/edit?tab=projects]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 18:37:44) [POST]
+  Parameters: {"commit"=>"Save", "action"=>"edit", "authenticity_token"=>"Df3fO0nUp+L673I5GHRZFsi3WV8p5wIiXTxaA1loZIk=", "settings"=>{"user_format"=>"firstname_lastname", "start_of_week"=>"", "date_format"=>"", "default_language"=>"en", "gravatar_default"=>"", "gravatar_enabled"=>"1", "time_format"=>"", "ui_theme"=>"redmineplus"}, "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Redirected to http://rredmine.com/settings/edit?tab=display
+Completed in 66ms (DB: 50) | 302 Found [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing SettingsController#edit (for 127.0.0.1 at 2011-11-30 18:37:44) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"settings", "tab"=>"display"}
+Settings cache cleared.
+Rendering template within layouts/admin
+Rendering settings/edit
+Completed in 148ms (View: 146, DB: 0) | 200 OK [http://rredmine.com/settings/edit?tab=display]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2011-11-30 18:37:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering projects/index
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://rredmine.com/projects]
+Starting Contact plugin for RedMine
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:37:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 150ms (View: 113, DB: 11) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:37:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Settings cache cleared.
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 127ms (View: 101, DB: 7) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2011-11-30 18:37:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"test", "controller"=>"projects"}
+Rendering template within layouts/base
+Rendering projects/show
+Completed in 73ms (View: 40, DB: 7) | 200 OK [http://rredmine.com/projects/test]
+
+
+Processing IssuesController#new (for 127.0.0.1 at 2011-11-30 18:37:59) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"new", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/new
+Completed in 156ms (View: 135, DB: 3) | 200 OK [http://rredmine.com/projects/test/issues/new]
+
+
+Processing IssuesController#index (for 127.0.0.1 at 2011-11-30 18:38:00) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"issues"}
+Rendering template within layouts/base
+Rendering issues/index
+Completed in 156ms (View: 65, DB: 14) | 200 OK [http://rredmine.com/projects/test/issues]
+
+
+Processing TodosController#index (for 127.0.0.1 at 2011-11-30 18:38:01) [GET]
+  Parameters: {"project_id"=>"test", "action"=>"index", "controller"=>"todos"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'redmine.todos' doesn't exist: SHOW FIELDS FROM `todos`):
+  vendor/plugins/redmine_todos_plugin/app/controllers/todos_controller.rb:31:in `index'
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MytodosController#index (for 127.0.0.1 at 2011-11-30 18:38:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"mytodos"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'redmine.todos' doesn't exist: SELECT * FROM `todos` WHERE ((author_id = 1 OR assigned_to_id = 1) AND (`todos`.`todoable_type` = 'Project')) ):
+  vendor/plugins/redmine_todos_plugin/app/controllers/mytodos_controller.rb:23:in `index'
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IssuesController#show (for 127.0.0.1 at 2011-11-30 18:38:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"issues"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'redmine.todos' doesn't exist: SHOW FIELDS FROM `todos`):
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+Starting Contact plugin for RedMine
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2011-12-01 12:56:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"welcome"}
+Rendering template within layouts/base
+Rendering welcome/index
+Completed in 47ms (View: 33, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2011-12-01 12:57:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'redmine.contacts_projects' doesn't exist: SELECT count(DISTINCT `contacts`.id) AS count_all FROM `contacts`  LEFT OUTER JOIN `contacts_projects` ON `contacts_projects`.contact_id = `contacts`.id  LEFT OUTER JOIN `projects` ON `projects`.id = `contacts_projects`.project_id WHERE ((1=1) AND (projects.status=1 AND projects.id IN (SELECT em.project_id FROM enabled_modules em WHERE em.name='contacts_module'))) ):
+  vendor/plugins/redmine_contacts/app/controllers/contacts_controller.rb:246:in `find_contacts'
+  vendor/plugins/redmine_contacts/app/controllers/contacts_controller.rb:45:in `index'
+  thin (1.3.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:78:in `catch'
+  thin (1.3.1) lib/thin/connection.rb:78:in `pre_process'
+  thin (1.3.1) lib/thin/connection.rb:53:in `process'
+  thin (1.3.1) lib/thin/connection.rb:38:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.3.1) lib/thin/backends/base.rb:61:in `start'
+  thin (1.3.1) lib/thin/server.rb:159:in `start'
+  thin (1.3.1) lib/thin/controllers/controller.rb:86:in `start'
+  thin (1.3.1) lib/thin/runner.rb:185:in `send'
+  thin (1.3.1) lib/thin/runner.rb:185:in `run_command'
+  thin (1.3.1) lib/thin/runner.rb:151:in `run!'
+  thin (1.3.1) bin/thin:6
+  /usr/bin/thin:19:in `load'
+  /usr/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)

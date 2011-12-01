@@ -1,0 +1,43 @@
+<div id="issues">
+
+<div class="contextual">
+	<%= link_to l(:label_issue_new), {}, :onclick => "Element.show('add_issue'); Element.hide(this);  return false;", :id => 'add_task_link' if User.current.allowed_to?(:add_issues, @project) %>
+</div>
+
+<h3><%= l(:label_issue_plural) %> </h3> 
+	  
+
+<%= error_messages_for 'issue' %>    
+
+<div id="add_issue" style="display:none;"> 
+   <% form_tag({ :controller => "contacts_tasks", :action => "new", :project_id => @project, :contact_id => contact}, :multipart => true, :id => "add_task_form") do %> 
+		
+		<%= render :partial => 'contacts_tasks/attributes' %>
+       
+ 		<%= link_to l(:button_cancel), {}, :onclick => "Element.hide('add_issue'); Element.show('add_task_link'); return false;" %>   
+	
+	<% end %>
+</div>        
+
+
+<div id="contact_issues">
+
+	<% if tasks.any? %>
+	<table style="width:100%">
+		<% tasks.each do |issue| %>
+		<tr id=<%="issue_#{issue.id}"%>> 
+			<td style="vertical-align: top; padding-top: 4px;">  
+ 			 	<%= check_box_tag :close, '', false, :onclick => "this.disable(); $('issue_#{issue.id}').style.textDecoration='line-through';" +  remote_function(:url => {:controller => "contacts_tasks", :action => "close", :contact_id => contact, :project_id => issue.project, :issue_id => issue }, :with => "issue_#{issue.id}") if issue.assigned_to == User.current %>
+			</td>
+     		
+			<td style="vertical-align: top;">  
+				<%= link_to issue.subject, :controller => :issues, :action => :show, :id => issue %>
+			</td>
+			<td style="vertical-align: top; text-align: right;"><%= format_date(issue.due_date) %></td>
+		</tr>
+		<% end %>
+	</table>
+	<% end %>
+</div>
+
+</div>

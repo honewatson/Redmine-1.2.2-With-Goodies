@@ -1,0 +1,21 @@
+<ul>
+
+	<% if !@contact.nil? %>
+		<li><%= context_menu_link l(:button_edit), {:controller => 'contacts', :action => 'edit', :id => @contact, :project => @project}, :class => 'icon-edit', :disabled => !@can[:edit] %></li>
+		<% if User.current.logged? %>
+		<li><%= watcher_link(@contact, User.current) %></li>
+		<% end %>
+
+		<% if !@project.nil? %>
+            <% if @contact.is_company? %>
+			<li><%= context_menu_link l(:label_add_employee), {:controller => 'contacts', :action => 'new', :project_id => @project, :company_name => @contact.name},
+	                            :class => 'icon-add-employee', :disabled => !@can[:edit] %></li>
+	        <% end %>
+		<% end %>					
+	<% end %>	
+	
+
+   	 <li><%= context_menu_link l(:button_delete), {:controller => 'contacts', :action => 'bulk_destroy', :ids => @contacts.collect(&:id), :project_id => @project},
+                            :method => :post, :confirm => l(:text_are_you_sure), :class => 'icon-del', :disabled => !@can[:delete] %></li>
+</ul>
+

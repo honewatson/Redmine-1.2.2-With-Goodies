@@ -1,0 +1,21 @@
+<p>  
+  <label><%= l(:label_gravatar_enabled) %></label>
+  <%= check_box_tag 'settings[use_gravatar]', 1, @settings[:use_gravatar] %>
+</p>
+    
+<p>  
+  <label><%= l(:label_user_format) %></label>
+  <%= select_tag 'settings[name_format]', options_for_select(Contact::CONTACT_FORMATS.keys.collect {|f| [Contact.new(:first_name => 'Firstname', :last_name => 'Lastname', :middle_name => 'Middlename').name(f), f.to_s] }, @settings[:name_format] ) %>
+</p> 
+
+<p>  
+  <label><%= l(:label_thumbnails_enabled) %></label>
+  <%= check_box_tag 'settings[auto_thumbnails]', 1, @settings[:auto_thumbnails] %>
+</p>      
+
+<% if !Object.const_defined?(:Magick)  %>
+<p>
+  <label><%= l(:label_max_thumbnail_file_size) %></label>
+  <%= text_field_tag 'settings[max_thumbnail_file_size]', @settings[:max_thumbnail_file_size], :size => 6 %> <%= l(:"number.human.storage_units.units.kb") %>
+</p>
+<% end %>    

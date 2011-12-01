@@ -1,0 +1,120 @@
+es:
+  contacts_title: Contactos
+
+  label_all_people: Toda las personas
+  label_all_companies: Todas las compañías
+  label_all_people_and_companies: Todas las personas y compañías
+  label_recently_viewed: Vistos recientemente
+  label_gravatar_enabled: Usar Gravatar  
+  label_thumbnails_enabled: Mostrar miniaturas en las notas
+  label_max_thumbnail_file_size: Maximo tamaño de la miniatura
+  label_contacts_view_all: Ver todos los contactos
+  label_contact_files: Ficheros
+  label_task_plural: Tareas
+  label_contact_background_info: Transfondo
+  label_contact: Persona
+  label_company: Compañia   
+  label_contact_plural: Lista de contactos   
+  label_contact_information: Información de contacto
+  label_contact_edit_information: Editando la información de contacto
+  label_edit_tags: Cambiar etiquetas
+  label_contact_view: Ver
+  label_contact_list: Lista
+  label_contact_new: Nuevo
+  label_at_company: en
+  label_last_notes: Últimas notas
+  label_tags_plural: Etiquetas     
+  label_multi_tags_plural: Seleccionar varias etiquetas
+  label_single_tag_mode: Etiqueta
+  label_multiple_tags_mode: Etiquetas
+  label_contact_tag: Etiqueta
+  label_time_ago: antes
+  label_add_note_plural: Añadir nota a
+  label_note_plural: Notas
+  label_company_employees: Empleados
+  label_add_tags_rule: separadas por comas
+  label_search: Buscar por nombre
+  label_note_for: Nota para
+  label_show_on_map: Mostrar en mapa
+  label_add_another_phone: añadir teléfono
+  label_contact_note_plural: Todas las notas  
+  label_remove: borrar        
+  label_related_contacts: Contactos relacionados
+  label_assigned_to: Responsable
+  label_issue_added: asunto añadido
+  label_add_emails_rule: separados por comas
+  label_add_phones_rule: separados por comas
+  label_add_employee: Nuevo empleado   
+  label_merge_dublicate_plural: Unir
+  label_dublicate_plural: Posible duplicado
+  label_dublicate_for_plural: Posible duplicado para
+   
+  label_note_show_extras: Advanzado (ficheros, fechas)
+  label_note_hide_extras: Esconder avanzado       
+  label_note_added: Se ha añadido la nota correctamente
+  label_note_read_more: (leer más)
+
+  label_deal_plural: Acuerdos
+  label_contractor_plural: Contratista
+  label_deal: Acuerdo
+  label_deal_new: Nuevo acuerdo
+  label_deal_edit_information: Cambiar información del acuerdo
+  label_deal_change_status: Cambiar estado
+  label_deal_pending: Pendiente
+  label_deal_won: Ganado
+  label_deal_lost: Perdido
+  
+
+  field_note_date: Fecha de la nota
+  
+  field_deal_name: Nombre
+  field_deal_background: Trasfondo
+  field_deal_contact: Contacto
+  field_deal_price: Cuenta  
+  field_price: Cuenta
+  
+  field_contact_avatar: Avatar
+  field_contact_is_company: Compañía
+  field_contact_name: Nombre
+  field_contact_last_name: Apellido
+  field_contact_first_name: Nombre
+  field_contact_middle_name: Segundo nombre
+  field_contact_job_title: Cargo
+  field_contact_company: Compañia
+  field_contact_address: Dirección
+  field_contact_phone: Teléfono
+  field_contact_email: Email
+  field_contact_website: Website
+  field_contact_skype: Skype
+  field_contact_status: Estado   
+  field_contact_background: Trasfondo
+  field_contact_tag_names: Etiquetas   
+  field_first_name: Nombre
+  field_last_name: Apellido
+  field_company: Compañía
+  field_birthday: Cumpleaños     
+  field_contact_department: Departmento
+  
+  field_company_field: Industria
+  
+  field_color: Color
+  
+  button_add_note: Añadir nota
+  notice_successful_save: Guardado correctamente
+  notice_successful_add: Creado correctamente
+  notice_unsuccessful_save: Problemas al guardar
+  notice_successful_merged: Unido correctamente
+  
+  notice_merged_warning: Todas las notas, proyectos, etiquetas y tareas asociadas a esta persona se moveran a la persona seleccionada. El contacto será borrado.
+  
+  project_module_contacts_module: Contactos
+  
+  permission_view_contacts: Ver contactos
+  permission_edit_contacts: Editar contactos
+  permission_delete_contacts: Borrar contactos
+  permission_view_deals: Ver acuerdos
+  permission_edit_deals: Editar acuerdos
+  permission_delete_deals: Borrar acuerdos
+  permission_add_notes: Añadir notas       
+  permission_delete_notes: Borrar notas      
+  permission_delete_own_notes: Borrar notas propias

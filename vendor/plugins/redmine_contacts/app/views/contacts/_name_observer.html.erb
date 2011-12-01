@@ -1,0 +1,18 @@
+<%= observe_field("contact_first_name",  
+					:frequency => 1, 
+					:update => 'duplicates', 
+					:url => {:controller => 'contacts_duplicates', :action => 'duplicates', :project_id => @project, :contact_id => @contact}, 
+					:with => "$('contact_form').serialize()") %>   
+
+<%= observe_field("contact_middle_name",  
+					:frequency => 1, 
+					:update => 'duplicates', 
+					:url => {:controller => 'contacts_duplicates', :action => 'duplicates', :project_id => @project, :contact_id => @contact}, 
+					:with => "$('contact_form').serialize()") %>   
+
+<%= observe_field("contact_last_name",  
+					:frequency => 1, 
+					:update => 'duplicates', 
+					:url => {:controller => 'contacts_duplicates', :action => 'duplicates', :project_id => @project, :contact_id => @contact}, 
+					:with => "$('contact_form').serialize()") %>   
+

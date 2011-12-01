@@ -1,0 +1,145 @@
+it:
+  contacts_title: Contatti
+
+  label_all_people: Tutti
+  label_all_companies: Tutte le aziende
+  label_all_people_and_companies: Tutti e tutte le aziende
+  label_recently_viewed: Visualizzati di recente
+  label_gravatar_enabled: Usa Gravatar  
+  label_thumbnails_enabled: Mostra miniature belle note
+  label_max_thumbnail_file_size: Dimensione massima delle note
+  label_contacts_view_all: Vedi tutti i contatti
+  label_contact_files: Files
+  label_task_plural: Compito
+  label_contact_background_info: Storico contatto
+  label_contact: Persona
+  label_company: Azienda   
+  label_contact_plural: Lista dei contatti
+  label_contact_information: Info contatti
+  label_contact_edit_information: Modifica le informazione del contatto
+  label_edit_tags: Modifica etichette
+  label_contact_view: Visualizza
+  label_contact_list: Lista
+  label_contact_new: Nuovo
+  label_at_company: at
+  label_last_notes: Note recenti
+  label_tags_plural: Etichette
+  label_multi_tags_plural: Selezione etichette multiple
+  label_single_tag_mode: Etichetta singola
+  label_multiple_tags_mode: Etichette multiple
+  label_contact_tag: Etichetta
+  label_time_ago: fa'
+  label_add_note_plural: Aggiungi note a
+  label_note_plural: Note
+  label_company_employees: Impiegati
+  label_add_tags_rule: separarti da virgola
+  label_search: Cerca per nome
+  label_note_for: Nota per
+  label_show_on_map: Mostra nella mappa
+  label_add_another_phone: aggiungi telefono
+  label_contact_note_plural: Tutte le note
+  label_remove: elimina
+  label_related_contacts: Contatti collegati  
+  label_assigned_to: Responsabile
+  label_issue_added: Segnalazione aggiunta
+  label_add_emails_rule: separati da virgola
+  label_add_phones_rule: separati da virgola
+  label_add_employee: Nuovo impiegato
+  label_merge_dublicate_plural: Merge
+  label_dublicate_plural: Duplicati ammessi
+  label_dublicate_for_plural: Possible duplicates for
+   
+  label_note_show_extras: Dettagli (files, date)
+  label_note_hide_extras: Nascondi dettagli   
+  label_note_added: La nota e' stata aggiunta
+  label_note_read_more: (continua)
+
+  label_deal_plural: Contratti
+  label_contractor_plural: Contraenti
+  label_deal: Contratto
+  label_deal_new: Nuovo contratto
+  label_deal_edit_information: Modifica dettagli contratto
+  label_deal_change_status: Cambia stato 
+  label_deal_pending: In trattativa
+  label_deal_won: Attivo
+  label_deal_lost: Perso
+  label_deal_expired: Scaduto
+  
+
+  field_note_date: Data della nota
+  
+  field_deal_name: Nome
+  field_deal_background: Storico
+  field_deal_contact: Contatti   
+  field_deal_price: Importo
+  field_price: Importo
+  
+  field_contact_avatar: Avatar
+  field_contact_is_company: Azienda
+  field_contact_name: Nome
+  field_contact_last_name: Cognome
+  field_contact_first_name: Nome
+  field_contact_middle_name: Secondo nome
+  field_contact_job_title: Titolo
+  field_contact_company: Azienda
+  field_contact_address: Indirizzo
+  field_contact_phone: Telefono
+  field_contact_email: Email
+  field_contact_website: Sito web
+  field_contact_skype: Skype
+  field_contact_status: Stato   
+  field_contact_background: Storico   
+  field_contact_tag_names: Etichette
+  field_first_name: Nome
+  field_last_name: Cognome
+  field_company: Azienda 
+  field_birthday: Compleanno    
+  field_contact_department: Reparto
+  
+  field_company_field: Industry 
+  
+  field_color: Colore
+  
+  button_add_note: Aggiungi nota
+  notice_successful_save: Salvato correttamente
+  notice_successful_add: Creato correttamente
+  notice_unsuccessful_save: Salvataggio fallito
+  notice_successful_merged: Uniti correttamente
+  
+  notice_merged_warning: Tutte le note, i progetti, le etichette ed i compiti collegati a questo contatto saranno uniti con il contatto scelto in basso. Quindi questo contatto sara' cancellato.
+  
+  project_module_contacts_module: Contatti
+  
+  permission_view_contacts: Visualizza contatto
+  permission_edit_contacts: Modifica contatto
+  permission_delete_contacts: Elimina contatto
+  permission_view_deals: Visualizza contratto
+  permission_edit_deals: Modifica contratto
+  permission_delete_deals: Elimina contratto
+  permission_add_notes: Aggiungi note   
+  permission_delete_notes: Elimina note      
+  permission_delete_own_notes: Elimina le proprie note    
+  
+  # 2.0.0
+  label_deal_category: categoria affare
+  label_deal_category_plural: categorie di offerte
+  label_deal_category_new: Nuova categoria
+  text_deal_category_destroy_assignments: Rimuovere categoria incarichi
+  text_deal_category_destroy_question: "Alcune occasioni (% {count}) vengono assegnati a questa categoria Cosa vuoi fare.? "
+  text_deal_category_reassign_to: Riassegnare offerte per questa categoria
+  text_deals_destroy_confirmation: "Sei sicuro di voler cancellare l'affare selezionati (s)?"
+  label_deal_status_plural: stati affare
+  label_deal_status: affare di stato
+  field_deal_status_is_closed: chiuso
+  label_deal_status_new: Nuovo
+  permission_manage_contacts: enumerazioni
+  label_sale_funel: imbuto di vendita
+  label_period: Data dell'arrivo
+  label_count: Conte
+
+  # 2.0.1
+  label_user_format: Nome del contatto formato
+  label_my_contact_plural: Contatti assegnato a me
+  label_my_deal_plural: Offerte aperto assegnato a me
+  label_contact_view_all: Vedi tutti i contatti
+  label_deal_view_all: Mostra tutte le offerte

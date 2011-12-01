@@ -1,0 +1,30 @@
+<div class="contextual">  
+<%= link_to_if_authorized(l(:button_edit), {:controller => 'notes', :action => 'edit', :project_id => @project, :note_id => @note}, :class => 'icon icon-edit', :title => l(:button_edit)) %> 
+</div>
+
+
+<%= breadcrumb link_to(@note.source.name, note_source_url(@note.source)) %> 
+
+<%= render :partial => 'note_header', :object => @note %>
+
+<div class="box wiki">    
+	<%= textilizable(@note, :content) %>  
+	<%= auto_thumbnails(@note) %>    
+</div>
+
+<%= link_to_attachments @note, :author => false  %>
+
+
+<% html_title "#{l(:label_note_for)} #{@note.source.name}" %>    
+
+<% content_for :sidebar do %>
+	<%= render :partial => 'common/sidebar' %>   
+	
+	<%= render :partial => 'common/recently_viewed' %>
+<% end %>	
+
+<% content_for :header_tags do %>
+	<%= javascript_include_tag :defaults %>   
+	<%= javascript_include_tag :contacts, :plugin => 'redmine_contacts'  %>
+	<%= stylesheet_link_tag :contacts, :plugin => 'redmine_contacts' %>
+<% end %>

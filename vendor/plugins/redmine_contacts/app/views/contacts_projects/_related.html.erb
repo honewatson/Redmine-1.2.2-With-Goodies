@@ -1,0 +1,31 @@
+<div id="contact_projects">  
+	<div class="contextual">           
+		<%= link_to_remote l(:button_add), 
+		                   :url => {:controller => 'contacts_projects',
+		                            :action => 'add',
+									:project_id => @project,
+		                            :contact_id => @contact} if authorize_for(:contacts, :edit) %> 
+
+	 </div>
+
+	
+	<h3><%= l(:label_project_plural) %> </h3>  
+	
+	<% unless !(@show_form == "true") %>
+     	<% form_remote_tag( 
+                	   :url => {:controller => 'contacts_projects',
+              	              	:action => 'add',
+         	                    :contact_id => @contact,
+                        		:project_id => @project},
+       	             :method => :post,
+      	             :html => {:id => 'add-project-form'}) do |f| %>
+		<p><%= select_tag :new_project_id, project_tree_options_for_select(Project.has_module(:contacts_module).visible.find(:all, :order => 'lft')), :prompt => "--- #{l(:actionview_instancetag_blank_option)} ---" %>
+
+		<%= submit_tag l(:button_add) %>
+		<%= toggle_link l(:button_cancel), 'add-project-form'%></p>
+		<% end %>
+	<% end %>
+    
+	<%= render_contact_projects_hierarchy @contact.projects %>
+
+</div>

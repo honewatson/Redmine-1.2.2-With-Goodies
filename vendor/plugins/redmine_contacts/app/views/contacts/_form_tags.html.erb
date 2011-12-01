@@ -1,0 +1,22 @@
+<div id="tags_data">
+	<span class="tags">
+		<%= render :partial => 'tags_item', :collection => @contact.tags, :locals => {:is_note => false} %>
+	</span>
+	<% if authorize_for('contacts', 'edit_tags') %>
+	<span class="contextual">
+		<%= link_to l(:label_edit_tags), {}, :onclick => "Element.show('edit_tags_form'); Element.hide('tags_data');  return false;", :id => 'edit_tags_link' %>
+	</span>
+	<% end %>
+</div>
+<div class="box" id="edit_tags_form" style="display:none;">
+<% form_tag( {:controller => 'contacts', 
+	:action => 'edit_tags', 
+	:project_id => @project, 
+	:id => @contact }, 
+	:multipart => true ) do %>    
+	
+	<%= render :partial => "contacts_tags/tags_form" %> 
+	
+	<%= submit_tag l(:button_save) %>
+	<%= link_to l(:button_cancel), {}, :onclick => "Element.hide('edit_tags_form'); Element.show('tags_data'); return false;" %>
+<% end %></div>

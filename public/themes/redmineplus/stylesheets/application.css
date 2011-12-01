@@ -1,0 +1,685 @@
+@import url(../../../stylesheets/application.css);
+
+body, #wrapper { background-color:#eee; font-family:"Lucida Grande", verdana, arial, helvetica, sans-serif; }
+
+a:hover { text-decoration: underline; }
+a:hover, a:active { color: #2A5685; }
+
+#header, #top-menu { margin: 0; }
+#header { background-color: #333; padding: 8px 8px 0 8px; height: 5.5em; }
+#header h1 { margin: 0 24px; }
+#header #quick-search { margin: 0 24px; }
+#top-menu { background-color: #000; font-size: 10px; position: relative; padding: 0; height: 21px }
+#top-menu ul { padding: 0 21px; }
+#top-menu li, #top-menu #loggedas { color: #ddd; line-height: 21px; margin-right: 4px; }
+#top-menu li a { color: #999; font-weight: normal; padding:4px 5px; }
+#top-menu li a:hover { color: #fff; text-decoration: none; }
+#main { background: #EEEEEE; margin: 8px 24px 0px 24px; }
+#content, #main.nosidebar #content { background: #fff; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; width: 80%; overflow: auto; }
+#sidebar { width: 17%; }
+#footer { background-color:#EEEEEE; border: 0px; clear: left; color:#666666; font-size:9px; margin:4px 0 20px 20px; padding-bottom:15px; text-align:left; }
+#footer a:hover { background:#666666 none repeat scroll 0 0; color:#FFFFFF !important;}
+#footer a:link, #footer a:visited { color:#666666; }
+
+/* Headers */
+h1, h2, h3, h4 { font-family: "Lucida Grande",arial,sans-serif; }
+h1 { font-size: 24px; font-weight: normal; margin:0pt 0pt 0pt 0.25em; padding:0pt 0pt 10px; text-align:left; }
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 { border-bottom: 0px;}
+
+h2, .wiki h1 { background-color: #edf3fe; margin: -6px -10px 10px; padding: 10px 20px; font-size: 14px; color: #000; }
+.wiki h1 { font-family:"Trebuchet MS",Verdana,sans-serif; font-weight: bold;}
+.wiki h2 { background-color: #fff; }
+
+h3, h4 { font-weight: normal; }
+
+#sidebar h3 { border-bottom:1px solid #DCDCDC; padding:6px 8px; }
+
+/* Links */
+#sidebar a:hover { background-color:#003399; color:#FFFFFF; text-decoration: none;}
+
+/* Menu */
+#main-menu { margin: 0 24px; }
+#main-menu li a { background-color: #666; font-weight: normal; padding:4px 8px 6px; }
+#main-menu li a:hover { background: #999; text-decoration: none; }
+#main-menu li a.selected, #main-menu li a.selected:hover { background-color:#EEEEEE; color: #111; font-weight:bold; }
+
+/* Tables */
+table.list { border: none; }
+table.list th { background-color: #fff; }
+table.list tbody td, table.list tbody tr td { border-bottom: solid 1px #ddd; font-size: 11px; padding:4px 10px 4px 3px; }
+table.list thead th {
+    border: none;
+    border-bottom:1px solid #999999;
+    font-size:9px;
+    font-weight:normal;
+    padding:0pt 3px 3px;
+    text-transform:uppercase;
+}
+
+table.list thead th a { color: #000; }
+table.list thead th a:hover { color: #000; }
+
+/* Issues grid styles by priorities (provided by Wynn Netherland) */
+table.list tr.issue a { color: #333; }
+
+tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
+tr.odd.priority-5 { background: #ffc4c4; }
+tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
+tr.even.priority-5 { background: #ffd4d4; }
+tr.priority-5 a, tr.priority-5:hover a { color: #900; }
+tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
+
+tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover { color: #900; }
+tr.odd.priority-4 { background: #ffc4c4; }
+tr.even.priority-4, table.list tbody tr.even.priority-4:hover { color: #900; }
+tr.even.priority-4 { background: #ffd4d4; }
+tr.priority-4 a { color: #900; }
+tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #ffb4b4; }
+
+tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #900; }
+tr.odd.priority-3 { background: #fee; }
+tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #900; }
+tr.even.priority-3 { background: #fff2f2; }
+tr.priority-3 a { color: #900; }
+tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
+
+tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
+tr.odd.priority-1 { background: #eaf7ff; }
+tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
+tr.even.priority-1 { background: #f2faff; }
+tr.priority-1 a { color: #559; }
+tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
+
+p.breadcrumb {
+    background-color:#EEEEEE;
+    border-bottom:1px solid white;
+    font-size:0.9em;
+    margin:-6px -10px 6px;
+    padding:6px;
+    text-indent:15px;
+}
+
+/* Fields */
+input[type="text"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
+input[type="text"], input[type="password"] { padding: 3px; }
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus { border: 1px solid #888866; }
+option { border-bottom: 1px dotted #d7d7d7; }
+input#issue_subject { font-size: 200%; width: 90%; }
+
+textarea.wiki-edit { font-family: Cambria, Verdana, Serif; font-size: larger; }
+
+/* Misc */
+.box { background-color: #fcfcfc; }
+
+.contextual { font-size: 0.9em; font-family:verdana; }
+
+hr { background:#eee none repeat scroll 0% 0%; }
+
+
+
+
+body, #wrapper {
+    background-color: #fff  !important;
+    font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif  !important;
+}
+
+#header {
+    background-color: #F2F2F2  !important;
+    padding: 0  !important;
+    color: #333  !important;
+    height: 60px  !important;
+    line-height: 60px  !important;
+    border-bottom: 1px solid #DEDEDE  !important;
+}
+
+#header h1 {
+    margin: 0 24px  !important;
+    font-size: 18px  !important;
+    float: left  !important;
+}
+
+#header h1 a {
+    color: #333  !important;
+}
+
+#header #quick-search {
+    position: absolute  !important;
+    right: 0  !important;
+    top: 65px  !important;
+    width: 17%  !important;
+    z-index: 11 !important;
+    text-align: center !important;
+}
+
+#header #quick-search form {
+    display: block  !important;
+}
+
+#header #quick-search a {
+    color: #333  !important;
+    display: none  !important;
+}
+
+#header #quick-search input[type="text"] {
+    padding: 5px  !important;
+    margin-left: -10px  !important;
+    width: 180px  !important;
+    border-radius: 3px  !important;
+    -webkit-box-shadow: inset 0 1px 0 #eee  !important;
+    outline: 0  !important;
+}
+
+#header #quick-search input[type="text"]:focus {
+    -webkit-box-shadow: inset 0 1px 0 #ddd  !important;
+}
+
+#header #quick-search select {
+    width: 190px  !important;
+    margin: 0  !important;
+}
+
+#top-menu {
+    background-color: #000  !important;
+    font-size: 10px  !important;
+    position: relative  !important;
+    padding: 0  !important;
+    height: 30px  !important;
+}
+
+#top-menu li, #top-menu #loggedas {
+    color: #ddd  !important;
+    line-height: 18px  !important;
+    margin-right: 5px  !important;
+    display: block  !important;
+    height: 40px  !important;
+    font-size: 12px  !important;
+}
+
+#top-menu #loggedas {
+    border-top: 3px solid #000  !important;
+    margin-top: 4px !important;
+}
+
+#top-menu li a {
+    color: #C0C0C0  !important;
+    font-weight: bold  !important;
+    display: block  !important;
+    border-top: 3px solid #000  !important;
+    font-size: 12px  !important;
+}
+
+body.controller-issues.action-index #top-menu > ul li:nth-child(4) a {
+    border-top: 3px solid #BD4132  !important;
+    color: #fff  !important;
+}
+
+body.controller-activities.action-index #top-menu > ul li:nth-child(1) a {
+    border-top: 3px solid #BD4132  !important;
+    color: #fff  !important;
+}
+
+body.controller-my.action-page #top-menu > ul li:nth-child(2) a {
+    border-top: 3px solid #BD4132  !important;
+    color: #fff  !important;
+}
+
+body.controller-projects.action-index #top-menu > ul li:nth-child(3) a {
+    border-top: 3px solid #BD4132  !important;
+    color: #fff  !important;
+}
+
+#top-menu li a:hover {
+    color: #fff  !important;
+    text-decoration: none  !important;
+    border-top: 3px solid #BD4132  !important;
+}
+
+#main {
+    position: absolute !important;
+    background: #fff !important;
+    width: 98% !important;
+    padding: 0 !important;
+}
+
+#content, #main.nosidebar #content {
+    background: #fff  !important;
+    width: 78%  !important;
+    overflow: auto  !important;
+    -webkit-font-smoothing: antialiased  !important;
+    border: none  !important;
+    margin-left: 0  !important;
+}
+
+#main.nosidebar #content ul.projects li {
+    border-bottom: 1px solid #ccc !important;
+    padding: 0 0 10px 10px !important;
+}
+
+#main.nosidebar #content ul.projects li a {
+    padding-left: 18px !important;
+}
+
+body.controller-projects #main.nosidebar #content p {
+    padding-top: 10px !important;
+}
+
+#sidebar {
+    width: 17%  !important;
+    margin-top: 80px  !important;
+    text-indent: 20px  !important;
+}
+
+#footer {
+    background-color: #EEEEEE  !important;
+    border: 0px  !important;
+    clear: left  !important;
+    color: #666666  !important;
+    font-size: 9px  !important;
+    margin: 4px 0 20px 20px  !important;
+    padding-bottom: 15px  !important;
+    text-align: left  !important;
+    display: none  !important;
+}
+
+#content p.other-formats {
+    display: none  !important;
+}
+
+h2, .wiki h1 {
+    margin: -6px -10px 10px  !important;
+    padding: 10px 20px  !important;
+    font-size: 14px  !important;
+    color: #000  !important;
+}
+
+#sidebar h3 {
+    border-bottom: 1px solid #DCDCDC  !important;
+    padding: 6px 0  !important;
+    color: #e24938  !important;
+    border: none  !important;
+    margin-bottom: 5px  !important;
+}
+
+#sidebar br {
+    display: none  !important;
+}
+
+#sidebar input[type="checkbox"] {
+    float: left  !important;
+    margin: 6px 5px 0 0  !important;
+}
+
+#sidebar a {
+    padding: 5px  !important;
+    display: block !important;
+    color: #333  !important;
+}
+
+#sidebar p a {
+    display: inline !important;
+}
+
+#sidebar form p a {
+    display: block !important;
+}
+
+#sidebar a:hover {
+    background-color: #eee  !important;
+    color: #333  !important;
+    text-decoration: none  !important;
+}
+
+#main-menu {
+    margin: 0  !important;
+    height: 30px  !important;
+    line-height: 30px  !important;
+    position: absolute  !important;
+    top: 15px  !important;
+    text-align: right  !important;
+    right: 20px !important;
+    left: auto !important;
+}
+
+#main-menu li {
+    margin: 0  !important;
+    margin-right: 5px  !important;
+    position: relative  !important;
+}
+
+#main-menu li a {
+    padding: 0 5px  !important;
+    display: block  !important;
+    color: #838383  !important;
+    font-weight: normal  !important;
+    -webkit-border-radius: 3px  !important;
+    border: 1px solid #DEDEDE  !important;
+    -webkit-box-shadow: 0 1px 0 #fff  !important;
+    background: #eee  !important;
+}
+
+#main-menu li a.selected, #main-menu li a:hover, #main-menu li a.selected:hover {
+    background: #eee  !important;
+    color: #555  !important;
+    -webkit-box-shadow: inset 0 0 5px #ccc, 0 1px 0 #fff  !important;
+    border-color: #ccc  !important;
+}
+
+table.list {
+    border: none  !important;
+    margin-top: 20px  !important;
+}
+
+table.list tbody td, table.list tbody tr td {
+    border-bottom: solid 1px #ddd  !important;
+    font-size: 12px  !important;
+    padding: 0 10px 0 3px  !important;
+}
+
+table.list tbody tr td {
+    line-height: 30px  !important;
+}
+
+table.list tbody tr td a img {
+    margin-top: 7px !important;
+}
+
+table.list tbody td input {
+    margin-top: 10px  !important;
+}
+
+table.list td.done_ratio table {
+    margin-top: 10px  !important;
+}
+
+table.list tr.group td {
+    line-height: 20px  !important;
+}
+
+table.list tr.group span {
+    float: left  !important;
+    margin-right: 5px  !important;
+    margin-top: 22px  !important;
+}
+
+table.list tr.group a {
+    font-size: 14px  !important;
+    display: block  !important;
+    margin: 20px 5px 10px 0  !important;
+    float: left  !important;
+}
+
+#activity dl {
+    padding: 0  !important;
+}
+
+#activity dt a {
+    font-size: 13px  !important;
+}
+
+#activity span.description, #activity span.author {
+    display: block  !important;
+    margin: 5px 0 0 0  !important;
+}
+
+#activity span.author {
+    margin-left: 5px  !important;
+}
+
+img.gravatar {
+    border-radius: 3px  !important;
+}
+
+.action-index #content {
+    position: relative  !important;
+}
+
+.action-index #content h3, .mypage-box h3 {
+    margin: 20px 0  !important;
+    background: whitesmoke  !important;
+    padding: 10px  !important;
+    border: 1px solid #dedede  !important;
+}
+
+.action-index #content p.subtitle {
+    position: absolute  !important;
+    right: 10px  !important;
+    top: 35px  !important;
+}
+
+#content fieldset:first-child {
+    margin-top: 20px  !important;
+}
+
+#content fieldset {
+    padding: 10px  !important;
+}
+
+#content fieldset legend {
+    font-size: 13px  !important;
+}
+
+#content p.buttons {
+    margin-bottom: 50px  !important;
+    font-size: 12px  !important;
+}
+
+#content p.buttons a {
+    margin-right: 10px  !important;
+}
+
+#query_form {
+    display: none  !important;
+}
+
+#sidebar img.gravatar {
+    float: left  !important;
+    margin-left: 20px  !important;
+    margin-right: -15px  !important;
+    margin-top: 2px  !important;
+}
+
+ul.projects {
+    list-style: none !important;
+}
+
+div.issue {
+    background: #fafafa !important;
+    padding: 20px !important;
+    border: 1px solid #dedede !important;
+    -webkit-box-shadow: 0 0 5px #ddd !important;
+    margin-bottom: 30px !important;
+    margin-top: 15px !important;
+}
+
+div.issue .subject h3 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#history ul.details {
+    margin-left: 15px !important;
+    margin-top: 0 !important;
+}
+
+#history ul.details li {
+    margin-bottom: 5px !important;
+}
+
+table.list td {
+    text-align: left !important;
+}
+
+table.list td.id {
+    width: 5% !important;
+    text-align: left !important;
+}
+
+table.list thead th {
+    text-align: left !important;
+}
+
+div.contextual {
+    margin-top: 22px !important;
+}
+
+body.controller-timelog div.contextual, body.controller-time_entry_reports div.$
+    margin-top: -2px !important;
+}
+
+body.controller-repositories div.contextual {
+    margin-top: 19px !important;
+}
+
+div.issue.status-2.priority-2.assigned-to-me.details {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+#top-menu ul {
+    padding: 0 21px  !important;
+    overflow: hidden  !important;
+}
+
+#content h2 {
+    margin-top: 10px !important;
+    border: 1px solid #dedede  !important;
+    background: #fafafa !important;
+}
+
+.action-login #top-menu, .action-login #header {
+  display: none !important;
+}
+
+.action-login #quick-search {
+  display: none !important;
+}
+
+.action-login #main { margin: 0 !important; }
+
+.action-login #main.nosidebar #content {
+  width: 100% !important;
+  margin: 0 !important;
+  min-height: 400px !important;
+  padding-top: 50px !important;
+}
+
+.action-login #main.nosidebar #content form table {
+  position: relative !important;
+  border: 1px solid #b3b4b6 !important;
+  width: 403px !important;
+  padding: 10px 0 20px 0 !important;
+  text-shadow: 0 1px 0 #fff !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  box-shadow: inset 0 1px 0 #fff, 0 0 5px #ddd !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e9ecf0), to(#e6e9ef)) !important;
+}
+
+.action-login #main.nosidebar #content form table::before {
+  content: 'Seegno Project Management' !important;
+  position: absolute !important;
+  top: -52px !important;
+  width: 401px !important;
+  left: -1px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  text-indent: 20px !important;
+  border-radius: 5px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  box-shadow: inset 0 1px 0 #fff, 0 0 5px #eee !important;
+  border: 1px solid #9ea0a5 !important;
+  border-bottom: 1px solid #888 !important;
+  font-size: 17px !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .7) !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e6ea), to(#b3bece)) !important;
+  color: #4a5e7d !important;
+}
+
+.action-login #main.nosidebar #content form table::after {
+  position: absolute !important;
+  content: 'Seegno, 2011' !important;
+  display: block !important;
+  bottom: -50px !important;
+  width: 390px !important;
+  font-size: 10px !important;
+  text-align: center !important;
+}
+
+.action-login #main.nosidebar #content form table td {
+  display: block !important;
+  text-align: left !important;
+  padding: 0 0 0 20px !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(1) td label, .action-login #main.nosidebar #content form table tr:nth-child(2) td label {
+  display: none !important;
+}
+
+.action-login #main.nosidebar #content form table td input[type=text], .action-login #main.nosidebar #content form table td input[type=password] {
+  margin-bottom: 15px !important;
+  padding: 5px !important;
+  font-size: 20px !important;
+  width: 343px !important;
+  border-radius: 3px !important;
+  outline: 0 !important;
+  background: #fff !important;
+  box-shadow: inset 0 3px 5px #eee, 0 1px 0 #fff !important;
+  border: 1px solid #9ea0a5 !important;
+}
+
+.action-login #main.nosidebar #content form table td input[type=text]:focus, .action-login #main.nosidebar #content form table td input[type=password]:focus {
+  border: 1px solid #555 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#fff))
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(3) td {
+  padding: 0 !important;
+  margin-top: -5px !important;
+  overflow: hidden !important;
+  text-indent: 20px !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(3) td label {
+  font-weight: normal !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(4) {
+  float: left !important;
+  margin-top: -30px !important;
+  width: 373px !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(4) a {
+  float: right !important;
+  margin-top: 11px !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(4) input {
+  margin-top: 25px !important;
+  padding: 10px !important;
+  width: 355px !important;
+  border: 1px solid #939494 !important;
+  border-radius: 5px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dee0e4), to(#cad0d8)) !important;
+  box-shadow: inset 0 1px 0 #fff !important;
+  font-size: 20px !important;
+  text-shadow: 0 1px 0 #fff !important;
+  color: #4f4f50 !important;
+}
+
+.action-login #main.nosidebar #content form table tr:nth-child(4) input:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cad0d8), to(#dee0e4)) !important;
+  box-shadow: inset 0 0 3px #cad0d8 !important;
+}
+
+.action-login .flash.error {
+  width: 400px !important;
+  margin: 0 auto !important;
+  padding: 10px 10px 10px 30px !important;
+  margin-bottom: 80px !important;
+  border-radius: 5px !important;
+  box-shadow: inset 0 1px 0 #fff !important;
+  text-shadow: 0 1px 0 #fff !important;
+}

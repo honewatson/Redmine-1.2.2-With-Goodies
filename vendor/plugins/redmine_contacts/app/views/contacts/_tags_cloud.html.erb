@@ -1,0 +1,21 @@
+<div id="tags">
+	<span id="single_tags" <%= "style='display: none;'" if (@tag && @tag.count > 1) %> >
+		<span class="contextual" <%= "style='display: none;'" if !@tag %>>
+			<%= link_to l(:label_multiple_tags_mode), {}, :onclick => "$('multiple_tags').toggle(); $('single_tags').toggle(); return false;", :id => 'edit_tags_link' %>
+		</span>
+
+		<h3><%= l(:label_tags_plural) %></h3>
+		<%= render :partial => "tags_item", :collection => @tags, :locals => {:is_note => false, :multiple => false, :show_selected => true}  %>
+	</span>
+
+	<span id="multiple_tags" <%= "style='display: none;'" if !@tag || (@tag && @tag.count < 2) %>>
+		<span class="contextual">
+			<%= link_to l(:label_single_tag_mode), {}, :onclick => "$('multiple_tags').toggle(); $('single_tags').toggle(); return false;", :id => 'edit_tags_link' %>
+		</span> 
+
+		<h3><%= l(:label_multi_tags_plural) %></h3>
+		<%= render :partial => "tags_item", :collection => @tags, :locals => {:is_note => false, :multiple => true, :show_selected => true}  %>
+	</span>
+
+</div>
+

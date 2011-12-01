@@ -1,0 +1,24 @@
+  <h3><%= l(:label_tags_plural) %></h3>   
+
+<table class  = "list issues">
+	<thead>
+		<th><%= l(:field_name) %></th>
+		<th align="center" style="width:10%;"> </th> 
+	</thead>
+	<tbody>
+		<% ActsAsTaggableOn::Tag.find(:all, :include => :taggings, :conditions => "#{ActsAsTaggableOn::Tagging.table_name}.taggable_type = 'Contact'", :order => :name).each do |tag| %>
+			<tr id="<%= tag.id %>" class="<%= cycle("odd", "even") %> hascontextmenu ">
+				<td><span class="color" style="border: 1px solid #D7D7D7;background-color: <%= tag.color_name %>;">&nbsp;&nbsp;&nbsp;&nbsp;</span> <%= link_to tag.name, :controller => "contacts_tags", :action => 'edit', :id => tag %></td>
+				<td class="buttons">
+
+			    <%= link_to l(:button_delete), {:controller => "contacts_tags", :action => 'destroy', :id => tag }, 
+			    															 :method => :post,
+			    															 :confirm => l(:text_are_you_sure),
+			    															 :class => 'icon icon-del' %>
+			    </td>
+			    
+			</tr>
+			
+		<% end %>
+	</tbody>
+</table>  

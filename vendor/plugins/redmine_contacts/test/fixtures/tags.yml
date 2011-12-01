@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+tag_one:
+  id: 1
+  name: main
+  color: <%= '3333ff'.hex %>
+tag_two:
+  id: 2
+  name: test
+  color: <%= 'ff3333'.hex %>

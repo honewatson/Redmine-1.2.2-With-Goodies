@@ -1,0 +1,45 @@
+<% form_tag({}) do -%>	
+<%= hidden_field_tag 'back_url', url_for(params) %>  
+<%= hidden_field_tag 'project_id', @project.id if @project %> 
+	<% unless @contacts.empty? %>
+		<table class="contacts index">
+		<tbody>
+	    <% @contacts.each do |contact| %>  
+			<tr class="hascontextmenu">
+				<td class="checkbox">
+					<%= check_box_tag "selected_contacts[]", contact.id, false, :onclick => "toggleContact(event, this);" %>
+				</td>
+				<td class="avatar">
+						<%= link_to avatar_to(contact, :size => "32"), {:controller => 'contacts', :action => 'show', :project_id => @project, :id => contact.id}, :id => "avatar" %>
+				</td>
+				<td class="name">
+					<h1><%= link_to contact.name, contact_url(contact) %></h1>
+					<h2>
+						<%= link_to h(contact.website), contact.website, :only_path => true unless !contact.is_company %>
+						<%= mail_to contact.emails.first unless contact.is_company%>
+						<div><%= contact.phones.first %></div>
+					</h2>
+				</td>
+				<td class="info">
+					<div class="title_and_company" >
+						<%= h contact.job_title %>
+						<% if !contact.is_company %>
+							<%= " #{l(:label_at_company)} " unless (contact.job_title.blank? or contact.company.blank?) %> 
+							<%= h contact.company %> 
+						<% end %>
+					</div>
+					<div class="tags">
+						<%= render :partial => "tags_item", :collection => contact.tags, :locals => {:is_note => false}  %>
+					</div>
+				</td>
+			</tr>         
+	    <% end %>
+		</tbody>
+	  </table> 
+	 	<%= contacts_paginator @contacts_pages, :params => {:project_id => params[:project_id]} if @contacts_pages %>      
+	<% else %>
+	  <p class="nodata"><%=l(:label_no_data)%></p>
+	<% end %>  
+<% end %>
+
+<%= context_menu url_for( {:controller => "contacts", :action => "context_menu"} )%>  

@@ -1,0 +1,24 @@
+<%= label_tag 'task_subject',  l(:field_subject)%> <br>
+<%= text_field_tag 'task_subject', "", :style => "width: 98%;" %><br>      
+
+<p>  
+<%= label_tag :assigned_to,  l(:field_assigned_to)%> <br>
+<%= select_tag :assigned_to,  options_from_collection_for_select(@project.assignable_users, :id, :name, User.current.id) %>
+</p>  
+<%= label_tag 'due_date',  l(:field_due_date)%> <br>
+<%= text_field_tag :due_date, Date.today,  :size => 12 %><%= calendar_for('due_date') %><br>   
+
+<p> 
+<%= label_tag :task_description,  l(:field_description)%> <br>      
+<%= text_area_tag :task_description, "", :rows => 6, :class => 'wiki-edit' , :style => "width: 98%;" %><br>      
+</p>
+
+<p>
+<%= label_tag :task_tracker,  l(:field_tracker)%> <br>
+<%= select_tag :task_tracker,  options_from_collection_for_select(@project.trackers, :id, :name, @project.trackers.find(:first) ) %>
+</p>
+
+<br>
+<hr>
+<br>
+<%= submit_tag l(:button_add) %>

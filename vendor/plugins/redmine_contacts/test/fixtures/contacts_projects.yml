@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+contact_project_one:
+  project_id: 1
+  contact_id: 1
+contact_project_two:
+  project_id: 1
+  contact_id: 2
+contact_project_three:
+  project_id: 1
+  contact_id: 3

@@ -1,0 +1,4 @@
+<h3><%= l(:label_recently_viewed) %></h3>
+<div id="recently_viewed">
+	<%= render :partial => 'common/contact_data', :collection => RecentlyViewed.last(5) %>        
+</div>      

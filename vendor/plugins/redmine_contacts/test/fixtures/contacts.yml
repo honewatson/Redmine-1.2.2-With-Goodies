@@ -1,0 +1,37 @@
+contact_one:
+    id: 1
+    first_name: Ivan
+    last_name: Ivanov
+    middle_name: Ivanovich
+    company: Domoway
+
+contact_two:
+    id: 2
+    first_name: Marat
+    last_name: Aminov
+    middle_name: Ivanovich
+    job_title: CEO
+    company: Domoway
+    email: marat@mail.ru
+    skype_name: marat_aminov
+    background: Marat is a famous writer an reader 
+    
+contact_three:
+    id: 3
+    first_name: Domoway
+    job_title: web project 
+    is_company: true
+    email: marat@mail.ru
+    background: Realy cool project    
+ 
+004:
+   id: 4
+   first_name: Test_4
+
+005:
+   id: 5
+   first_name: Test_5
+
+006:
+   id: 6
+   first_name: Test_6
